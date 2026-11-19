@@ -1,0 +1,38 @@
+name: Actualizar Catalogo Farmacia
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  push:
+    paths:
+      - 'matriz_rutas_farmacia.xlsx'
+      - 'scraper.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-catalogo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar scraper de precios e imagenes
+        run: python scraper.py
+
+      - name: Guardar catalogo.json actualizado
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add catalogo.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Actualiza precios e imagenes reales en catalogo.json" && git push)

@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asesor Dermocosmético y Belleza | Farmacias Ahumada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ahumada-burgundy: #7E1428;
+    --ahumada-red: #E30613;
+    --ahumada-red-dark: #BE0510;
+    --ahumada-red-soft: #FEF2F2;
+    --ahumada-red-border: #FECACA;
+    --ahumada-navy: #0E2244;
+    --ahumada-navy-soft: #EFF4FA;
+    --ahumada-teal: #17B2B5;
+    --ink: #0F172A;
+    --muted: #475569;
+    --line: #E2E8F0;
+    --bg: #F6F8FB;
+    --white: #FFFFFF;
+    --green: #059669;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Top Promo Bar estilo Farmacias Ahumada */
+  .top-promo-bar {
+    background: var(--ahumada-burgundy);
+    color: var(--white);
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-bottom: 3px solid var(--ahumada-red);
+    letter-spacing: 0.01em;
+  }
+
+  /* Header oficial */
+  header {
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    padding: 12px 20px;
+    box-shadow: 0 2px 10px rgba(14, 34, 68, 0.04);
+  }
+  .header-inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .brand-divider {
+    width: 1px;
+    height: 26px;
+    background: var(--line);
+    margin: 0 2px;
+  }
+  .brand-tag {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ahumada-navy);
+    background: var(--ahumada-navy-soft);
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+
+  .nav-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .pill-btn {
+    border: 1.5px solid var(--line);
+    background: var(--white);
+    color: var(--ahumada-navy);
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .pill-btn:hover { border-color: var(--ahumada-red); color: var(--ahumada-red); }
+  .pill-btn.active { background: var(--ahumada-red); color: var(--white); border-color: var(--ahumada-red); }
+  .cart-btn {
+    background: var(--ahumada-navy);
+    color: var(--white);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: background 0.15s;
+  }
+  .cart-btn:hover { background: #173566; }
+  .cart-badge {
+    background: var(--ahumada-red);
+    color: var(--white);
+    border-radius: 999px;
+    padding: 1px 7px;
+    font-size: 11px;
+    font-weight: 800;
+  }
+
+  /* Main container */
+  main {
+    flex: 1;
+    max-width: 880px;
+    width: 100%;
+    margin: 24px auto 40px;
+    padding: 0 16px;
+  }
+  .sync-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--muted);
+    background: var(--white);
+    border: 1px solid var(--line);
+    padding: 8px 14px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  .dot-live {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--ahumada-teal);
+    margin-right: 7px;
+  }
+
+  .card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 10px 28px rgba(14, 34, 68, 0.05);
+  }
+
+  .progress-wrap { margin-bottom: 22px; }
+  .progress-meta { display: flex; justify-content: space-between; font-size: 12px; font-weight: 800; color: var(--ahumada-navy); margin-bottom: 6px; }
+  .progress-track { width: 100%; height: 8px; background: #E2E8F0; border-radius: 999px; overflow: hidden; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, var(--ahumada-red), var(--ahumada-burgundy)); transition: width 0.25s ease; }
+
+  h1 { font-size: 26px; font-weight: 800; color: var(--ahumada-navy); letter-spacing: -0.02em; margin-bottom: 8px; }
+  h2 { font-size: 22px; font-weight: 800; color: var(--ahumada-navy); letter-spacing: -0.02em; margin-bottom: 8px; }
+  .lead { color: var(--muted); font-size: 15px; line-height: 1.5; margin-bottom: 22px; }
+
+  .field-group { margin-bottom: 20px; }
+  .field-label { display: block; font-size: 13px; font-weight: 800; margin-bottom: 8px; color: var(--ahumada-navy); }
+  .text-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid var(--line);
+    border-radius: 999px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .text-input:focus { border-color: var(--ahumada-red); }
+
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+  .option-card {
+    border: 1.5px solid var(--line);
+    background: var(--white);
+    border-radius: 16px;
+    padding: 16px 18px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .option-card:hover { border-color: var(--ahumada-red); background: var(--ahumada-red-soft); }
+  .option-card.selected {
+    border-color: var(--ahumada-red);
+    background: var(--ahumada-red-soft);
+    box-shadow: 0 0 0 2px rgba(227, 6, 19, 0.14);
+  }
+  .option-title { font-weight: 800; font-size: 15px; color: var(--ahumada-navy); }
+  .option-desc { font-size: 13px; color: var(--muted); line-height: 1.4; }
+
+  .btn-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--ahumada-red);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-size: 14.5px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .btn-primary:hover { background: var(--ahumada-red-dark); }
+  .btn-secondary {
+    background: var(--white);
+    color: var(--ahumada-navy);
+    border: 1.5px solid var(--line);
+    padding: 11px 20px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .btn-secondary:hover { border-color: var(--ahumada-navy); }
+
+  /* Resultados */
+  .budget-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    background: var(--ahumada-navy-soft);
+    padding: 10px 14px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #DBEAFE;
+  }
+  .budget-switcher span { font-size: 13px; font-weight: 800; color: var(--ahumada-navy); margin-right: 4px; }
+
+  .product-list { display: flex; flex-direction: column; gap: 16px; margin-bottom: 24px; }
+  .product-card {
+    border: 1.5px solid var(--line);
+    border-radius: 18px;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 116px 1fr;
+    gap: 18px;
+    align-items: center;
+    background: var(--white);
+    transition: border-color 0.15s;
+  }
+  .product-card:hover { border-color: #CBD5E1; }
+  @media (max-width: 600px) {
+    .product-card { grid-template-columns: 1fr; }
+  }
+  .product-img-box {
+    width: 116px;
+    height: 116px;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    background: var(--white);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    padding: 8px;
+  }
+  .product-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .img-placeholder {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--ahumada-navy);
+    line-height: 1.35;
+  }
+  .step-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    background: var(--ahumada-navy);
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 6px;
+  }
+  .opt-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #0F766E;
+    background: #CCFBF1;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-left: 6px;
+  }
+  .prod-brand { font-size: 12px; font-weight: 700; color: var(--muted); }
+  .prod-title { font-size: 16px; font-weight: 800; color: var(--ahumada-navy); margin: 2px 0 6px; }
+  .prod-desc { font-size: 13.5px; color: var(--muted); line-height: 1.45; margin-bottom: 8px; }
+  .prod-meta { font-size: 12.5px; color: var(--ink); font-weight: 700; margin-bottom: 12px; }
+  .prod-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+  }
+  .price-wrap { display: flex; align-items: center; gap: 8px; }
+  .prod-price { font-size: 19px; font-weight: 800; color: var(--ink); }
+  .badge-ahora {
+    font-size: 10.5px;
+    font-weight: 800;
+    color: var(--ahumada-red);
+    border: 1.5px solid var(--ahumada-red);
+    border-radius: 999px;
+    padding: 1px 8px;
+  }
+  .prod-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .btn-sm {
+    padding: 7px 13px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .btn-add { background: var(--ahumada-red); color: var(--white); border: none; }
+  .btn-add:hover { background: var(--ahumada-red-dark); }
+  .btn-link { background: var(--white); color: var(--ahumada-navy); border: 1.5px solid var(--line); }
+  .btn-link:hover { border-color: var(--ahumada-navy); }
+  .btn-remove { background: #F8FAFC; color: var(--muted); border: 1px solid var(--line); }
+  .btn-remove:hover { color: var(--ahumada-red); border-color: var(--ahumada-red-border); }
+
+  .excluded-bar {
+    background: #FFFBEB;
+    border: 1px solid #FDE68A;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* Drawer carrito */
+  #drawer-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(14, 34, 68, 0.45);
+    z-index: 40;
+  }
+  #cart-drawer {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    background: var(--white);
+    z-index: 50;
+    flex-direction: column;
+    box-shadow: -8px 0 30px rgba(14, 34, 68, 0.18);
+  }
+  .drawer-head {
+    padding: 18px 20px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--ahumada-navy);
+  }
+  .drawer-body { flex: 1; overflow-y: auto; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; }
+  .drawer-foot { padding: 18px 20px; border-top: 1px solid var(--line); background: var(--bg); }
+  .cart-item {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--ahumada-navy);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    z-index: 60;
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="top-promo-bar">
+  Despacho Gratis en compras sobre $39.990 · Asesoría Dermocosmética & Belleza
+</div>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" data-action="reset" aria-label="Farmacias Ahumada">
+      <!-- Logo Vectorial Oficial Farmacias Ahumada -->
+      <svg width="176" height="36" viewBox="0 0 220 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="3" width="44" height="38" rx="2" fill="#E30613"/>
+        <circle cx="29" cy="11.5" r="3.4" fill="#FFFFFF"/>
+        <path d="M24 16.5H34V27.5H31.2V38.5H26.8V27.5H24V16.5Z" fill="#FFFFFF"/>
+        <text x="52" y="20" fill="#0E2244" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="11.5" letter-spacing="-0.2">farmacias</text>
+        <text x="51" y="38" fill="#0E2244" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="23" letter-spacing="-0.8">ahumada</text>
+      </svg>
+      <span class="brand-divider"></span>
+      <span class="brand-tag">Asesor Digital</span>
+    </a>
+    <div class="nav-actions">
+      <button type="button" class="pill-btn" data-action="quick-module" data-module="Dermocosmetica">Dermocosmética</button>
+      <button type="button" class="pill-btn" data-action="quick-module" data-module="Belleza">Belleza</button>
+      <button type="button" class="pill-btn" data-action="reset">Reiniciar</button>
+      <button type="button" class="cart-btn" data-action="open-cart">
+        Tu Selección <span class="cart-badge" id="cart-count">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="sync-bar">
+    <span><span class="dot-live"></span><strong id="catalog-status" style="color:var(--ahumada-navy);">Catálogo Farmacias Ahumada</strong></span>
+    <span id="catalog-updated">Sincronizado</span>
+  </div>
+  <div id="app-root"></div>
+</main>
+
+<div id="drawer-backdrop" data-action="close-cart"></div>
+<aside id="cart-drawer">
+  <div class="drawer-head">
+    <strong>Tu Selección · Farmacias Ahumada</strong>
+    <button type="button" class="pill-btn" data-action="close-cart">Cerrar</button>
+  </div>
+  <div class="drawer-body" id="cart-items"></div>
+  <div class="drawer-foot">
+    <div style="display:flex;justify-content:space-between;margin-bottom:12px;font-size:16px;color:var(--ahumada-navy);">
+      <span>Total estimado:</span>
+      <strong id="cart-total">$0</strong>
+    </div>
+    <button type="button" class="btn-primary" style="width:100%;margin-bottom:8px;" data-action="copy-summary">Copiar resumen de rutina</button>
+    <button type="button" class="btn-secondary" style="width:100%;" data-action="reserve-store">Preparar retiro en farmacia</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const FALLBACK_CATALOG = {"ultima_actualizacion": "2026-11-19T13:14:00-03:00", "total_productos": 25, "productos": [{"sku": "93447", "modulo": "Dermocosmetica", "paso": "Protector Solar", "presupuesto": "Medio", "marca": "ISDIN", "nombre": "Protector Solar Fusion Water Magic Repair Color FPS 50", "url": "https://www.farmaciasahumada.cl/producto-93447.html", "pieles": ["Grasa", "Mixta", "Normal"], "necesidades": ["Manchas", "Arrugas", "Brillo", "Nada en particular"], "textura": "Ligero", "beneficio": "Fotoprotector facial ultraligero con toque de color que protege del sol y repara el daño solar acumulado.", "cuando": "Todas las mañanas", "precio": 17569, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "96025", "modulo": "Dermocosmetica", "paso": "Protector Solar", "presupuesto": "Medio", "marca": "Uriage", "nombre": "Protector Solar Uriage Invisible Stick FPS 50 18 g", "url": "https://www.farmaciasahumada.cl/producto-96025.html", "pieles": ["Sensible", "Seca", "Normal"], "necesidades": ["Afeitado", "Irritación", "Manchas", "Nada en particular"], "textura": "Ligero", "beneficio": "Stick solar invisible de alta tolerancia dermatológica, práctico para reaplicar sin manchar las manos.", "cuando": "Todas las mañanas y reaplicación", "precio": 15990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "104521", "modulo": "Dermocosmetica", "paso": "Limpiador", "presupuesto": "Esencial", "marca": "CeraVe", "nombre": "Gel Limpiador Espumoso 236 ml", "url": "https://www.farmaciasahumada.cl/producto-104521.html", "pieles": ["Grasa", "Mixta", "Normal"], "necesidades": ["Brillo", "Poros", "Acné"], "textura": "Ligero", "beneficio": "Limpia el exceso de sebo sin dañar la barrera cutánea con 3 ceramidas esenciales y niacinamida.", "cuando": "Mañana y noche", "precio": 13990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "104522", "modulo": "Dermocosmetica", "paso": "Limpiador", "presupuesto": "Esencial", "marca": "CeraVe", "nombre": "Limpiador Hidratante 236 ml", "url": "https://www.farmaciasahumada.cl/producto-104522.html", "pieles": ["Seca", "Sensible", "Normal"], "necesidades": ["Tirantez", "Resequedad", "Irritación", "Afeitado"], "textura": "Cremoso", "beneficio": "Limpia suavemente sin hacer espuma ni resecar, aportando ácido hialurónico y ceramidas.", "cuando": "Mañana y noche", "precio": 13490, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "108910", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Esencial", "marca": "Garnier SkinActive", "nombre": "Sérum Anti-Imperfecciones AHA + BHA + Niacinamida 30 ml", "url": "https://www.farmaciasahumada.cl/producto-108910.html", "pieles": ["Grasa", "Mixta"], "necesidades": ["Brillo", "Acné", "Poros", "Manchas"], "textura": "Ligero", "beneficio": "Reduce marcas, controla el sebo y afina la textura de la piel con 4% de activos.", "cuando": "Noche (o mañana con FPS)", "precio": 12990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "108915", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Esencial", "marca": "Neutrogena", "nombre": "Hydro Boost Sérum Hidratante Concentrado 30 ml", "url": "https://www.farmaciasahumada.cl/producto-108915.html", "pieles": ["Seca", "Mixta", "Sensible"], "necesidades": ["Tirantez", "Resequedad", "Deshidratación", "Afeitado"], "textura": "Ligero", "beneficio": "Hidrata intensamente con ácido hialurónico de absorción inmediata sin sensación pesada.", "cuando": "Mañana y noche", "precio": 14990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "104530", "modulo": "Dermocosmetica", "paso": "Hidratante", "presupuesto": "Esencial", "marca": "Neutrogena", "nombre": "Hydro Boost Water Gel 50 g", "url": "https://www.farmaciasahumada.cl/producto-104530.html", "pieles": ["Grasa", "Mixta", "Normal"], "necesidades": ["Brillo", "Deshidratación", "Nada en particular"], "textura": "Ligero", "beneficio": "Gel de agua ultraligero libre de aceites que hidrata por 48 horas sin tapar poros.", "cuando": "Mañana y noche", "precio": 13990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "104535", "modulo": "Dermocosmetica", "paso": "Hidratante", "presupuesto": "Esencial", "marca": "CeraVe", "nombre": "Loción Hidratante de Rostro PM 52 ml", "url": "https://www.farmaciasahumada.cl/producto-104535.html", "pieles": ["Seca", "Sensible", "Normal"], "necesidades": ["Tirantez", "Resequedad", "Afeitado", "Irritación"], "textura": "Cremoso", "beneficio": "Calma y repara la barrera de la piel con niacinamida y ceramidas; ideal post-afeitado.", "cuando": "Mañana y noche", "precio": 14990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "109201", "modulo": "Dermocosmetica", "paso": "Protector Solar", "presupuesto": "Esencial", "marca": "Nivea Sun", "nombre": "Protector Solar Facial Control Brillo FPS 50 50 ml", "url": "https://www.farmaciasahumada.cl/producto-109201.html", "pieles": ["Grasa", "Mixta", "Normal"], "necesidades": ["Brillo", "Manchas", "Nada en particular"], "textura": "Ligero", "beneficio": "Protección solar diaria de efecto matificante inmediato y cero sensación grasosa.", "cuando": "Todas las mañanas", "precio": 11990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "109205", "modulo": "Dermocosmetica", "paso": "Protector Solar", "presupuesto": "Esencial", "marca": "CeraVe", "nombre": "Loción Hidratante de Rostro AM FPS 50 52 ml", "url": "https://www.farmaciasahumada.cl/producto-109205.html", "pieles": ["Seca", "Sensible", "Normal"], "necesidades": ["Tirantez", "Resequedad", "Afeitado", "Manchas"], "textura": "Cremoso", "beneficio": "Hidratante y protector solar 2 en 1 que protege contra rayos UV mientras calma la piel.", "cuando": "Todas las mañanas", "precio": 15990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "201101", "modulo": "Dermocosmetica", "paso": "Limpiador", "presupuesto": "Medio", "marca": "La Roche-Posay", "nombre": "Effaclar Gel Purificante Micro-Exfoliante 200 ml", "url": "https://www.farmaciasahumada.cl/producto-201101.html", "pieles": ["Grasa", "Mixta"], "necesidades": ["Brillo", "Acné", "Poros"], "textura": "Ligero", "beneficio": "Desobstruye poros y regula el exceso de sebo gracias al ácido salicílico y LHA.", "cuando": "Mañana y noche", "precio": 19990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "201105", "modulo": "Dermocosmetica", "paso": "Limpiador", "presupuesto": "Medio", "marca": "Bioderma", "nombre": "Sensibio Gel Moussant 200 ml", "url": "https://www.farmaciasahumada.cl/producto-201105.html", "pieles": ["Sensible", "Seca", "Normal"], "necesidades": ["Tirantez", "Irritación", "Afeitado", "Resequedad"], "textura": "Ligero", "beneficio": "Limpiador micelar ultra suave sin jabón ni perfume que calma la irritación al instante.", "cuando": "Mañana y noche", "precio": 18990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "202210", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Medio", "marca": "Eucerin", "nombre": "DermoPure Oil Control Sérum Triple Efecto 40 ml", "url": "https://www.farmaciasahumada.cl/producto-202210.html", "pieles": ["Grasa", "Mixta"], "necesidades": ["Acné", "Manchas", "Brillo", "Poros"], "textura": "Ligero", "beneficio": "Reduce marcas post-acné con Thiamidol patentado y controla el brillo durante el día.", "cuando": "Mañana y noche", "precio": 24990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "202215", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Medio", "marca": "Bioderma", "nombre": "Hydrabio Sérum Concentrado Hidratante 40 ml", "url": "https://www.farmaciasahumada.cl/producto-202215.html", "pieles": ["Seca", "Sensible", "Normal"], "necesidades": ["Tirantez", "Resequedad", "Deshidratación"], "textura": "Ligero", "beneficio": "Reactiva la hidratación natural de la piel devolviendo luminosidad y confort inmediato.", "cuando": "Mañana y noche", "precio": 23990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "203310", "modulo": "Dermocosmetica", "paso": "Hidratante", "presupuesto": "Medio", "marca": "La Roche-Posay", "nombre": "Effaclar Mat Hidratante Seborregulador 40 ml", "url": "https://www.farmaciasahumada.cl/producto-203310.html", "pieles": ["Grasa", "Mixta"], "necesidades": ["Brillo", "Poros", "Acné"], "textura": "Ligero", "beneficio": "Hidrata y matifica de forma duradera reduciendo el tamaño visible de los poros.", "cuando": "Mañana y noche", "precio": 22990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "203318", "modulo": "Dermocosmetica", "paso": "Hidratante", "presupuesto": "Medio", "marca": "La Roche-Posay", "nombre": "Cicaplast Baume B5+ Bálsamo Reparador 40 ml", "url": "https://www.farmaciasahumada.cl/producto-203318.html", "pieles": ["Seca", "Sensible", "Normal"], "necesidades": ["Afeitado", "Irritación", "Tirantez", "Resequedad"], "textura": "Cremoso", "beneficio": "Bálsamo calmante y reparador con pantenol al 5% y madecasoside; alivia rojeces al instante.", "cuando": "Noche o post-afeitado", "precio": 18990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "301101", "modulo": "Dermocosmetica", "paso": "Limpiador", "presupuesto": "Premium", "marca": "La Roche-Posay", "nombre": "Toleriane Dermo-Limpiador Fluido 200 ml", "url": "https://www.farmaciasahumada.cl/producto-301101.html", "pieles": ["Sensible", "Seca", "Normal"], "necesidades": ["Irritación", "Tirantez", "Afeitado", "Resequedad"], "textura": "Cremoso", "beneficio": "Fórmula minimalista sin tensioactivos agresivos para pieles intolerantes o reactivas.", "cuando": "Mañana y noche", "precio": 28990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "302201", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Premium", "marca": "Vichy", "nombre": "Minéral 89 Booster Fortificante e Hidratante 50 ml", "url": "https://www.farmaciasahumada.cl/producto-302201.html", "pieles": ["Grasa", "Mixta", "Sensible"], "necesidades": ["Deshidratación", "Afeitado", "Tirantez", "Nada en particular"], "textura": "Ligero", "beneficio": "89% de Agua Volcánica de Vichy + ácido hialurónico puro para fortalecer la barrera cutánea.", "cuando": "Mañana y noche", "precio": 31990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "302209", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Premium", "marca": "La Roche-Posay", "nombre": "Hyalu B5 Sérum Anti-Arrugas Reparador 30 ml", "url": "https://www.farmaciasahumada.cl/producto-302209.html", "pieles": ["Seca", "Normal", "Sensible"], "necesidades": ["Arrugas", "Tirantez", "Resequedad", "Deshidratación"], "textura": "Ligero", "beneficio": "Rellena líneas finas y repara elasticidad con doble ácido hialurónico y vitamina B5.", "cuando": "Mañana y noche", "precio": 38990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "303305", "modulo": "Dermocosmetica", "paso": "Hidratante", "presupuesto": "Premium", "marca": "Avène", "nombre": "Hyaluron Activ B3 Crema Regeneradora Celular 50 ml", "url": "https://www.farmaciasahumada.cl/producto-303305.html", "pieles": ["Seca", "Normal", "Sensible"], "necesidades": ["Arrugas", "Tirantez", "Resequedad"], "textura": "Cremoso", "beneficio": "Concentrado con niacinamida al 6% y ácido hialurónico para firmeza y luminosidad profunda.", "cuando": "Mañana y noche", "precio": 36990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "304402", "modulo": "Dermocosmetica", "paso": "Protector Solar", "presupuesto": "Premium", "marca": "La Roche-Posay", "nombre": "Anthelios UVMune 400 Fluido Invisible FPS 50+ 50 ml", "url": "https://www.farmaciasahumada.cl/producto-304402.html", "pieles": ["Grasa", "Mixta", "Sensible"], "necesidades": ["Manchas", "Brillo", "Arrugas", "Nada en particular"], "textura": "Ligero", "beneficio": "Máxima protección frente a rayos UVA ultra-largos con textura fluida invisible ultra resistente.", "cuando": "Todas las mañanas", "precio": 29990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "401101", "modulo": "Belleza", "paso": "Prebase / Primer", "presupuesto": "Medio", "marca": "NYX Professional Makeup", "nombre": "The Marshmellow Primer Suavizante 30 ml", "url": "https://www.farmaciasahumada.cl/producto-401101.html", "pieles": ["Grasa", "Mixta", "Seca"], "necesidades": ["Poros", "Luminoso", "Natural"], "textura": "Ligero", "beneficio": "Suaviza textura, prolonga el maquillaje hasta 16 horas y unifica sin sensación pesada.", "cuando": "Antes de la base", "precio": 15990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "402201", "modulo": "Belleza", "paso": "Base / Tinte", "presupuesto": "Medio", "marca": "L'Oréal Paris", "nombre": "True Match Sérum con Color 1% Ácido Hialurónico 30 ml", "url": "https://www.farmaciasahumada.cl/producto-402201.html", "pieles": ["Seca", "Mixta", "Normal"], "necesidades": ["Natural", "Luminoso", "Cobertura media"], "textura": "Ligero", "beneficio": "Unifica el tono como un maquillaje mientras hidrata como un sérum con acabado piel real.", "cuando": "Uso diario", "precio": 16990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "403301", "modulo": "Belleza", "paso": "Corrector", "presupuesto": "Esencial", "marca": "Maybelline", "nombre": "Instant Age Rewind Eraser Corrector 6 ml", "url": "https://www.farmaciasahumada.cl/producto-403301.html", "pieles": ["Grasa", "Mixta", "Seca"], "necesidades": ["Natural", "Luminoso", "Cobertura media"], "textura": "Ligero", "beneficio": "Cubre ojeras e imperfecciones sin marcar líneas de expresión gracias a su aplicador esponja.", "cuando": "Después de la base", "precio": 9990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "404401", "modulo": "Belleza", "paso": "Fijación / Acabado", "presupuesto": "Esencial", "marca": "Essence", "nombre": "All About Matt! Polvo Compacto Fijador 8 g", "url": "https://www.farmaciasahumada.cl/producto-404401.html", "pieles": ["Grasa", "Mixta", "Normal"], "necesidades": ["Brillo", "Matte"], "textura": "Ligero", "beneficio": "Sella el maquillaje de forma translúcida y controla el brillo en la zona T todo el día.", "cuando": "Paso final", "precio": 4990, "imagen": "", "fuente": "respaldo_excel"}]};
+
+const state = {
+  catalog: FALLBACK_CATALOG.productos || [],
+  updatedAt: FALLBACK_CATALOG.ultima_actualizacion || "",
+  sourceMode: "respaldo",
+  screen: "welcome",
+  stepIndex: 0,
+  name: "",
+  gender: "Hombre",
+  module: "Dermocosmetica",
+  isMenBeginner: false,
+  answers: {
+    piel: "Mixta",
+    necesidad: "Brillo",
+    textura: "Ligero",
+    presupuesto: "Medio",
+    menNota: "Brillo",
+    menUsa: ["Solo agua"],
+    menTextura: "Ligero",
+    menInicio: "Con una rutina básica",
+    beautyCobertura: "Natural",
+    beautyAcabado: "Luminoso"
+  },
+  excludedSkus: [],
+  cart: []
+};
+
+async function loadCatalog() {
+  try {
+    const res = await fetch("./catalogo.json?v=" + Date.now());
+    if (res.ok) {
+      const data = await res.json();
+      if (data && Array.isArray(data.productos) && data.productos.length > 0) {
+        state.catalog = data.productos;
+        state.updatedAt = data.ultima_actualizacion || "";
+        state.sourceMode = "vivo";
+      }
+    }
+  } catch (e) {}
+  updateSyncBanner();
+  render();
+}
+
+function updateSyncBanner() {
+  const statusEl = document.getElementById("catalog-status");
+  const updatedEl = document.getElementById("catalog-updated");
+  if (!statusEl || !updatedEl) return;
+  statusEl.textContent = state.sourceMode === "vivo"
+    ? `Catálogo en vivo (${state.catalog.length} productos activos)`
+    : `Catálogo cargado (${state.catalog.length} productos)`;
+  if (state.updatedAt) {
+    const d = new Date(state.updatedAt);
+    if (!isNaN(d.getTime())) {
+      updatedEl.textContent = "Act: " + d.toLocaleDateString("es-CL") + " " + d.toLocaleTimeString("es-CL", {hour: "2-digit", minute: "2-digit"});
+    }
+  }
+}
+
+function formatCLP(num) {
+  return "$" + Number(num || 0).toLocaleString("es-CL");
+}
+
+function showToast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.style.display = "block";
+  setTimeout(() => { t.style.display = "none"; }, 2600);
+}
+
+function getRecommendedProducts() {
+  const active = state.catalog.filter(p => !state.excludedSkus.includes(p.sku));
+
+  if (state.module === "Belleza") {
+    const pasos = ["Prebase / Primer", "Base / Tinte", "Corrector", "Fijación / Acabado"];
+    const selected = [];
+    pasos.forEach(paso => {
+      const candidatos = active.filter(p => p.modulo === "Belleza" && p.paso === paso);
+      if (candidatos.length > 0) {
+        const match = candidatos.find(c =>
+          c.necesidades.some(n =>
+            n.toLowerCase().includes(state.answers.beautyCobertura.toLowerCase()) ||
+            n.toLowerCase().includes(state.answers.beautyAcabado.toLowerCase())
+          )
+        ) || candidatos[0];
+        selected.push({ ...match, isOptional: false });
+      }
+    });
+    return selected;
+  }
+
+  const budget = state.answers.presupuesto || "Medio";
+  let targetSkin = state.answers.piel;
+  let targetNeed = state.answers.necesidad;
+  let targetTexture = state.answers.textura;
+
+  if (state.isMenBeginner) {
+    targetTexture = state.answers.menTextura === "Sin preferencia" ? "" : state.answers.menTextura;
+    const nota = state.answers.menNota;
+    if (nota === "Brillo") { targetSkin = "Grasa"; targetNeed = "Brillo"; }
+    else if (nota === "Tirantez o resequedad") { targetSkin = "Seca"; targetNeed = "Tirantez"; }
+    else if (nota === "Molestias después del afeitado") { targetSkin = "Sensible"; targetNeed = "Afeitado"; }
+    else { targetSkin = "Normal"; targetNeed = "Nada en particular"; }
+  }
+
+  const dermoPool = active.filter(p => p.modulo === "Dermocosmetica");
+
+  function pickBestForStep(paso) {
+    let pool = dermoPool.filter(p =>
+      p.paso === paso &&
+      p.presupuesto === budget &&
+      p.pieles.some(s => s.toLowerCase() === targetSkin.toLowerCase())
+    );
+    if (pool.length === 0) {
+      pool = dermoPool.filter(p =>
+        p.paso === paso &&
+        p.pieles.some(s => s.toLowerCase() === targetSkin.toLowerCase())
+      );
+    }
+    if (pool.length === 0) return null;
+
+    pool.sort((a, b) => {
+      let scoreA = 0, scoreB = 0;
+      if (a.necesidades.some(n => n.toLowerCase().includes(targetNeed.toLowerCase()))) scoreA += 3;
+      if (b.necesidades.some(n => n.toLowerCase().includes(targetNeed.toLowerCase()))) scoreB += 3;
+      if (targetTexture && a.textura.toLowerCase() === targetTexture.toLowerCase()) scoreA += 2;
+      if (targetTexture && b.textura.toLowerCase() === targetTexture.toLowerCase()) scoreB += 2;
+      return scoreB - scoreA;
+    });
+    return pool[0];
+  }
+
+  if (state.isMenBeginner) {
+    const pasosMen = ["Limpiador", "Hidratante", "Protector Solar"];
+    const encontrados = pasosMen.map(pickBestForStep).filter(Boolean);
+
+    if (state.answers.menInicio === "Con un producto" && encontrados.length > 0) {
+      const idxPrincipal = encontrados.findIndex(p => p.paso === "Hidratante" || p.paso === "Protector Solar");
+      const mainIdx = idxPrincipal >= 0 ? idxPrincipal : 0;
+      return encontrados.map((item, i) => ({
+        ...item,
+        isOptional: i !== mainIdx
+      }));
+    }
+    return encontrados.slice(0, 3).map(item => ({ ...item, isOptional: false }));
+  }
+
+  const pasosStd = ["Limpiador", "Serum", "Hidratante", "Protector Solar"];
+  return pasosStd.map(pickBestForStep).filter(Boolean).map(item => ({ ...item, isOptional: false }));
+}
+
+const MEN_QUESTIONS = [
+  {
+    key: "menNota",
+    title: "¿Qué notas en tu cara?",
+    sub: "Elige lo que más te pasa durante el día.",
+    type: "single",
+    options: [
+      { val: "Brillo", desc: "Se ve brillosa o grasosa en frente y nariz" },
+      { val: "Tirantez o resequedad", desc: "Se siente tirante, áspera o se descama" },
+      { val: "Molestias después del afeitado", desc: "Ardor, rojeces o irritación al afeitarse" },
+      { val: "Nada en particular", desc: "Se siente normal y equilibrada" },
+      { val: "No sé", desc: "Busco algo simple y equilibrado para partir" }
+    ]
+  },
+  {
+    key: "menUsa",
+    title: "¿Qué usas actualmente?",
+    sub: "Puedes marcar una o varias opciones.",
+    type: "multi",
+    options: [
+      { val: "Solo agua", desc: "Me lavo la cara solo con agua" },
+      { val: "Jabón corporal", desc: "Uso el mismo jabón del cuerpo o ducha" },
+      { val: "Limpiador facial", desc: "Tengo un gel o espuma especial para rostro" },
+      { val: "Crema hidratante", desc: "Uso crema facial" },
+      { val: "Protector solar", desc: "Aplico bloqueador en la cara" }
+    ]
+  },
+  {
+    key: "menTextura",
+    title: "¿Cómo prefieres sentir el producto?",
+    sub: "Esto define la textura para que no te resulte incómodo.",
+    type: "single",
+    options: [
+      { val: "Ligero", desc: "Tipo gel o fluido que se absorbe rápido sin dejar rastro" },
+      { val: "Cremoso", desc: "Más suave y reconfortante en la piel" },
+      { val: "Sin preferencia", desc: "Me da igual mientras funcione bien" }
+    ]
+  },
+  {
+    key: "menInicio",
+    title: "¿Cómo quieres empezar?",
+    sub: "Armamos tu recomendación a tu ritmo.",
+    type: "single",
+    options: [
+      { val: "Con un producto", desc: "Un solo producto clave para partir fácil" },
+      { val: "Con una rutina básica", desc: "Hasta 3 pasos simples para mañana y noche" }
+    ]
+  },
+  {
+    key: "presupuesto",
+    title: "¿Qué nivel de presupuesto prefieres?",
+    sub: "Filtramos productos disponibles en Farmacias Ahumada dentro de tu rango.",
+    type: "single",
+    options: [
+      { val: "Esencial", desc: "Efectivos y accesibles ($8.990 – $15.990 c/u)" },
+      { val: "Medio", desc: "Dermocosmética dermatológica clásica ($16.000 – $26.990 c/u)" },
+      { val: "Premium", desc: "Fórmulas avanzadas de alta concentración ($28.000 – $45.990 c/u)" }
+    ]
+  }
+];
+
+const DERMO_QUESTIONS = [
+  {
+    key: "piel",
+    title: "¿Cómo describirías tu tipo de piel?",
+    sub: "Selecciona la opción que mejor representa tu rostro.",
+    type: "single",
+    options: [
+      { val: "Grasa", desc: "Brillo visible y poros dilatados en todo el rostro" },
+      { val: "Mixta", desc: "Brillo en zona T (frente, nariz) y mejillas normales o secas" },
+      { val: "Seca", desc: "Sensación de tirantez, opacidad o descamación" },
+      { val: "Sensible", desc: "Se enrojece o irrita fácilmente con cambios de clima o productos" },
+      { val: "Normal", desc: "Equilibrada, sin exceso de brillo ni resequedad" }
+    ]
+  },
+  {
+    key: "necesidad",
+    title: "¿Cuál es tu objetivo principal hoy?",
+    sub: "Priorizamos activos específicos según tu ruta.",
+    type: "single",
+    options: [
+      { val: "Brillo", desc: "Controlar sebo, poros y aspecto brilloso" },
+      { val: "Acné", desc: "Reducir brotes, puntos negros y marcas" },
+      { val: "Deshidratación", desc: "Aportar agua, frescura y elasticidad" },
+      { val: "Manchas", desc: "Unificar el tono y atenuar hiperpigmentación" },
+      { val: "Arrugas", desc: "Firmeza y líneas de expresión" }
+    ]
+  },
+  {
+    key: "textura",
+    title: "¿Qué textura prefieres en tu piel?",
+    sub: "Adaptamos la sensación al aplicarlo.",
+    type: "single",
+    options: [
+      { val: "Ligero", desc: "Gel, fluido o toque seco de rápida absorción" },
+      { val: "Cremoso", desc: "Crema o bálsamo nutritivo y envolvente" }
+    ]
+  },
+  {
+    key: "presupuesto",
+    title: "¿Qué nivel de presupuesto prefieres?",
+    sub: "Filtramos productos disponibles en el catálogo de Farmacias Ahumada.",
+    type: "single",
+    options: [
+      { val: "Esencial", desc: "Opciones accesibles de uso diario ($8.990 – $15.990 c/u)" },
+      { val: "Medio", desc: "Dermocosmética dermatológica ($16.000 – $26.990 c/u)" },
+      { val: "Premium", desc: "Tratamientos dermocosméticos avanzados ($28.000 – $45.990 c/u)" }
+    ]
+  }
+];
+
+const BEAUTY_QUESTIONS = [
+  {
+    key: "beautyCobertura",
+    title: "¿Qué nivel de cobertura buscas?",
+    sub: "Seleccionamos bases y correctores según tu estilo.",
+    type: "single",
+    options: [
+      { val: "Natural", desc: "Efecto buena cara, ligero y translúcido" },
+      { val: "Cobertura media", desc: "Unifica el tono cubriendo rojeces sin verse pesado" }
+    ]
+  },
+  {
+    key: "beautyAcabado",
+    title: "¿Qué acabado prefieres en la piel?",
+    sub: "Define el resultado final de tu maquillaje.",
+    type: "single",
+    options: [
+      { val: "Luminoso", desc: "Piel jugosa, hidratada y radiante" },
+      { val: "Matte", desc: "Acabado aterciopelado y libre de brillos" }
+    ]
+  }
+];
+
+function render() {
+  const root = document.getElementById("app-root");
+  if (!root) return;
+
+  if (state.screen === "welcome") {
+    root.innerHTML = `
+      <div class="card">
+        <h1>Encuentra tu rutina ideal en Farmacias Ahumada</h1>
+        <p class="lead">Responde unas preguntas rápidas y te recomendamos productos disponibles en nuestro catálogo según tu piel, objetivo y presupuesto.</p>
+
+        <div class="field-group">
+          <label class="field-label" for="user-name-input">¿Cómo te llamas? (Opcional)</label>
+          <input type="text" id="user-name-input" class="text-input" placeholder="Ej: Vicente" value="${state.name}">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Género</label>
+          <div class="options-grid">
+            ${["Hombre", "Mujer", "Prefiero no decir"].map(g => `
+              <button type="button" class="option-card ${state.gender === g ? "selected" : ""}" data-action="select-gender" data-val="${g}">
+                <span class="option-title">${g}</span>
+              </button>
+            `).join("")}
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">¿Qué categoría quieres explorar?</label>
+          <div class="options-grid">
+            <button type="button" class="option-card" data-action="start-module" data-module="Dermocosmetica">
+              <span class="option-title">Dermocosmética & Skincare</span>
+              <span class="option-desc">Limpiadores, sérums, hidratantes y protectores solares dermatológicos.</span>
+            </button>
+            <button type="button" class="option-card" data-action="start-module" data-module="Belleza">
+              <span class="option-title">Belleza & Maquillaje</span>
+              <span class="option-desc">Primers, bases con tratamiento, correctores y fijación.</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+    const nameInput = document.getElementById("user-name-input");
+    if (nameInput) {
+      nameInput.addEventListener("input", (e) => { state.name = e.target.value; });
+    }
+    return;
+  }
+
+  if (state.screen === "men_gate") {
+    const saludo = state.name.trim() ? `${state.name.trim()}, ` : "";
+    root.innerHTML = `
+      <div class="card">
+        <h2>${saludo}¿Ya tienes una rutina de cuidado facial?</h2>
+        <p class="lead">Así adaptamos las preguntas a tu nivel de experiencia.</p>
+        <div class="options-grid">
+          <button type="button" class="option-card" data-action="men-gate-choice" data-beginner="true">
+            <span class="option-title">Quiero empezar y no sé qué usar</span>
+            <span class="option-desc">Preguntas simples y directas, sin tecnicismos.</span>
+          </button>
+          <button type="button" class="option-card" data-action="men-gate-choice" data-beginner="false">
+            <span class="option-title">Ya uso productos</span>
+            <span class="option-desc">Ir al diagnóstico dermocosmético completo.</span>
+          </button>
+        </div>
+        <div class="btn-row">
+          <button type="button" class="btn-secondary" data-action="reset">Volver</button>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  if (state.screen === "men_quiz" || state.screen === "dermo_quiz" || state.screen === "beauty_quiz") {
+    const list = state.screen === "men_quiz" ? MEN_QUESTIONS : (state.screen === "dermo_quiz" ? DERMO_QUESTIONS : BEAUTY_QUESTIONS);
+    const q = list[state.stepIndex];
+    const pct = Math.round(((state.stepIndex + 1) / list.length) * 100);
+    const currentVal = state.answers[q.key];
+
+    root.innerHTML = `
+      <div class="card">
+        <div class="progress-wrap">
+          <div class="progress-meta">
+            <span>Paso ${state.stepIndex + 1} de ${list.length}</span>
+            <span>${pct}%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div>
+        </div>
+
+        <h2>${q.title}</h2>
+        <p class="lead">${q.sub}</p>
+
+        <div class="options-grid">
+          ${q.options.map(opt => {
+            const isSelected = q.type === "multi"
+              ? Array.isArray(currentVal) && currentVal.includes(opt.val)
+              : currentVal === opt.val;
+            return `
+              <button type="button" class="option-card ${isSelected ? "selected" : ""}"
+                data-action="${q.type === "multi" ? "toggle-multi" : "answer-single"}"
+                data-key="${q.key}" data-val="${opt.val}">
+                <span class="option-title">${opt.val}</span>
+                <span class="option-desc">${opt.desc}</span>
+              </button>
+            `;
+          }).join("")}
+        </div>
+
+        <div class="btn-row">
+          <button type="button" class="btn-secondary" data-action="prev-step">Atrás</button>
+          ${q.type === "multi" ? `<button type="button" class="btn-primary" data-action="next-step">Continuar</button>` : ""}
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  if (state.screen === "results") {
+    const recs = getRecommendedProducts();
+    const totalRutina = recs.filter(r => !r.isOptional).reduce((acc, p) => acc + p.precio, 0);
+    const nombre = state.name.trim();
+
+    const titulo = state.isMenBeginner
+      ? (nombre ? `${nombre}, tu primera rutina, sin complicarte` : "Tu primera rutina, sin complicarte")
+      : (nombre ? `${nombre}, esta es tu rutina recomendada` : "Tu rutina recomendada en Farmacias Ahumada");
+
+    const subtitulo = state.isMenBeginner
+      ? "Fórmulas probadas y fáciles de usar, elegidas según lo que nos contaste."
+      : "Productos filtrados directamente desde la matriz de rutas de Farmacias Ahumada.";
+
+    root.innerHTML = `
+      <div class="card">
+        <h1>${titulo}</h1>
+        <p class="lead">${subtitulo}</p>
+
+        ${state.module === "Dermocosmetica" ? `
+          <div class="budget-switcher">
+            <span>Nivel de presupuesto:</span>
+            ${["Esencial", "Medio", "Premium"].map(b => `
+              <button type="button" class="pill-btn ${state.answers.presupuesto === b ? "active" : ""}"
+                data-action="change-budget" data-val="${b}">${b}</button>
+            `).join("")}
+          </div>
+        ` : ""}
+
+        ${state.excludedSkus.length > 0 ? `
+          <div class="excluded-bar">
+            <span>Quitaste <strong>${state.excludedSkus.length}</strong> producto(s) que ya tienes en casa.</span>
+            <button type="button" class="pill-btn" data-action="restore-excluded">Restaurar todos</button>
+          </div>
+        ` : ""}
+
+        <div class="product-list">
+          ${recs.length === 0 ? `
+            <p class="lead">No hay más productos disponibles en este filtro. Prueba restaurar los productos quitados o cambiar el presupuesto.</p>
+          ` : recs.map((p, idx) => `
+            <div class="product-card">
+              <div class="product-img-box">
+                ${p.imagen
+                  ? `<img src="${p.imagen}" alt="${p.nombre}" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"><div class="img-placeholder" style="display:none;">SKU ${p.sku}<br>${p.marca}</div>`
+                  : `<div class="img-placeholder">SKU ${p.sku}<br>${p.marca}</div>`
+                }
+              </div>
+              <div>
+                <div>
+                  <span class="step-tag">Paso ${idx + 1} · ${p.paso}</span>
+                  ${p.isOptional ? `<span class="opt-tag">Complementario opcional</span>` : ""}
+                </div>
+                <div class="prod-brand">${p.marca} · SKU ${p.sku}</div>
+                <div class="prod-title">${p.nombre}</div>
+                <div class="prod-desc">${p.beneficio}</div>
+                <div class="prod-meta">Cuándo usarlo: ${p.cuando}</div>
+                <div class="prod-footer">
+                  <div class="price-wrap">
+                    <span class="prod-price">${formatCLP(p.precio)}</span>
+                    <span class="badge-ahora">Ahora</span>
+                  </div>
+                  <div class="prod-actions">
+                    <button type="button" class="btn-sm btn-remove" data-action="exclude-sku" data-sku="${p.sku}">Ya lo tengo · Quitar</button>
+                    ${p.url ? `<a class="btn-sm btn-link" href="${p.url}" target="_blank" rel="noopener">Ver en Ahumada ↗</a>` : ""}
+                    <button type="button" class="btn-sm btn-add" data-action="add-cart" data-sku="${p.sku}">+ Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `).join("")}
+        </div>
+
+        <div class="btn-row">
+          <button type="button" class="btn-secondary" data-action="reset">Volver a empezar</button>
+          ${recs.length > 0 ? `
+            <button type="button" class="btn-primary" data-action="add-all">
+              Agregar rutina completa (${formatCLP(totalRutina)})
+            </button>
+          ` : ""}
+        </div>
+      </div>
+    `;
+  }
+}
+
+function renderCart() {
+  const countEl = document.getElementById("cart-count");
+  const itemsEl = document.getElementById("cart-items");
+  const totalEl = document.getElementById("cart-total");
+  const totalUnits = state.cart.reduce((s, i) => s + i.qty, 0);
+  const totalPrice = state.cart.reduce((s, i) => s + (i.precio * i.qty), 0);
+
+  countEl.textContent = totalUnits;
+  totalEl.textContent = formatCLP(totalPrice);
+
+  if (state.cart.length === 0) {
+    itemsEl.innerHTML = `<p style="color:var(--muted);font-size:14px;">Aún no agregas productos a tu selección.</p>`;
+    return;
+  }
+
+  itemsEl.innerHTML = state.cart.map(item => `
+    <div class="cart-item">
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);">${item.marca} · SKU ${item.sku}</div>
+        <div style="font-size:13.5px;font-weight:800;color:var(--ahumada-navy);">${item.nombre}</div>
+        <div style="font-size:13.5px;font-weight:800;color:var(--ahumada-red);margin-top:2px;">${formatCLP(item.precio * item.qty)}</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;">
+        <button type="button" class="pill-btn" data-action="cart-dec" data-sku="${item.sku}">-</button>
+        <strong>${item.qty}</strong>
+        <button type="button" class="pill-btn" data-action="cart-inc" data-sku="${item.sku}">+</button>
+      </div>
+    </div>
+  `).join("");
+}
+
+document.addEventListener("click", (e) => {
+  const target = e.target.closest("[data-action]");
+  if (!target) return;
+  const action = target.dataset.action;
+
+  switch (action) {
+    case "reset":
+      state.screen = "welcome";
+      state.stepIndex = 0;
+      state.isMenBeginner = false;
+      state.excludedSkus = [];
+      render();
+      break;
+
+    case "select-gender":
+      state.gender = target.dataset.val;
+      render();
+      break;
+
+    case "start-module":
+    case "quick-module":
+      state.module = target.dataset.module;
+      state.stepIndex = 0;
+      state.excludedSkus = [];
+      if (state.module === "Belleza") {
+        state.isMenBeginner = false;
+        state.screen = "beauty_quiz";
+      } else if (state.gender === "Hombre") {
+        state.screen = "men_gate";
+      } else {
+        state.isMenBeginner = false;
+        state.screen = "dermo_quiz";
+      }
+      render();
+      break;
+
+    case "men-gate-choice":
+      state.isMenBeginner = target.dataset.beginner === "true";
+      state.stepIndex = 0;
+      state.screen = state.isMenBeginner ? "men_quiz" : "dermo_quiz";
+      render();
+      break;
+
+    case "answer-single": {
+      const key = target.dataset.key;
+      const val = target.dataset.val;
+      state.answers[key] = val;
+      const list = state.screen === "men_quiz" ? MEN_QUESTIONS : (state.screen === "dermo_quiz" ? DERMO_QUESTIONS : BEAUTY_QUESTIONS);
+      if (state.stepIndex < list.length - 1) {
+        state.stepIndex++;
+      } else {
+        state.screen = "results";
+      }
+      render();
+      break;
+    }
+
+    case "toggle-multi": {
+      const key = target.dataset.key;
+      const val = target.dataset.val;
+      let arr = Array.isArray(state.answers[key]) ? [...state.answers[key]] : [];
+      if (arr.includes(val)) {
+        arr = arr.filter(x => x !== val);
+      } else {
+        if (val === "Solo agua") arr = ["Solo agua"];
+        else arr = arr.filter(x => x !== "Solo agua").concat(val);
+      }
+      state.answers[key] = arr.length ? arr : ["Solo agua"];
+      render();
+      break;
+    }
+
+    case "next-step": {
+      const list = state.screen === "men_quiz" ? MEN_QUESTIONS : (state.screen === "dermo_quiz" ? DERMO_QUESTIONS : BEAUTY_QUESTIONS);
+      if (state.stepIndex < list.length - 1) state.stepIndex++;
+      else state.screen = "results";
+      render();
+      break;
+    }
+
+    case "prev-step":
+      if (state.stepIndex > 0) {
+        state.stepIndex--;
+      } else if (state.gender === "Hombre" && state.module === "Dermocosmetica") {
+        state.screen = "men_gate";
+      } else {
+        state.screen = "welcome";
+      }
+      render();
+      break;
+
+    case "change-budget":
+      state.answers.presupuesto = target.dataset.val;
+      render();
+      break;
+
+    case "exclude-sku":
+      if (!state.excludedSkus.includes(target.dataset.sku)) {
+        state.excludedSkus.push(target.dataset.sku);
+      }
+      render();
+      break;
+
+    case "restore-excluded":
+      state.excludedSkus = [];
+      render();
+      break;
+
+    case "add-cart": {
+      const prod = state.catalog.find(p => p.sku === target.dataset.sku);
+      if (prod) {
+        const existing = state.cart.find(c => c.sku === prod.sku);
+        if (existing) existing.qty++;
+        else state.cart.push({ ...prod, qty: 1 });
+        renderCart();
+        showToast("Agregado a tu selección");
+      }
+      break;
+    }
+
+    case "add-all": {
+      const recs = getRecommendedProducts().filter(r => !r.isOptional);
+      recs.forEach(prod => {
+        const existing = state.cart.find(c => c.sku === prod.sku);
+        if (existing) existing.qty++;
+        else state.cart.push({ ...prod, qty: 1 });
+      });
+      renderCart();
+      document.getElementById("drawer-backdrop").style.display = "block";
+      document.getElementById("cart-drawer").style.display = "flex";
+      break;
+    }
+
+    case "open-cart":
+      renderCart();
+      document.getElementById("drawer-backdrop").style.display = "block";
+      document.getElementById("cart-drawer").style.display = "flex";
+      break;
+
+    case "close-cart":
+      document.getElementById("drawer-backdrop").style.display = "none";
+      document.getElementById("cart-drawer").style.display = "none";
+      break;
+
+    case "cart-inc": {
+      const item = state.cart.find(c => c.sku === target.dataset.sku);
+      if (item) item.qty++;
+      renderCart();
+      break;
+    }
+
+    case "cart-dec": {
+      const idx = state.cart.findIndex(c => c.sku === target.dataset.sku);
+      if (idx >= 0) {
+        if (state.cart[idx].qty > 1) state.cart[idx].qty--;
+        else state.cart.splice(idx, 1);
+      }
+      renderCart();
+      break;
+    }
+
+    case "copy-summary": {
+      const items = state.cart.length ? state.cart : getRecommendedProducts().map(p => ({ ...p, qty: 1 }));
+      const lines = ["*Mi Rutina Recomendada - Farmacias Ahumada*", ""];
+      items.forEach((it, i) => {
+        lines.push(`${i + 1}. ${it.marca} - ${it.nombre} (SKU ${it.sku}): ${formatCLP(it.precio * it.qty)}`);
+      });
+      const total = items.reduce((s, it) => s + it.precio * it.qty, 0);
+      lines.push("", `Total estimado: ${formatCLP(total)}`);
+      navigator.clipboard.writeText(lines.join("\n")).then(() => showToast("Resumen copiado al portapapeles"));
+      break;
+    }
+
+    case "reserve-store":
+      showToast("Código de selección generado para mesón de Farmacias Ahumada");
+      break;
+  }
+});
+
+loadCatalog();
+</script>
+</body>
+</html>
