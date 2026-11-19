@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Asesor Dermocosmético y Belleza | Farmacias Ahumada</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +28,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   body {
@@ -36,28 +37,29 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
 
-  /* Top Promo Bar estilo Farmacias Ahumada */
+  /* Top Promo Bar */
   .top-promo-bar {
     background: var(--ahumada-burgundy);
     color: var(--white);
     text-align: center;
-    font-size: 12.5px;
+    font-size: 12px;
     font-weight: 600;
-    padding: 7px 14px;
+    padding: 7px 12px;
     border-bottom: 3px solid var(--ahumada-red);
     letter-spacing: 0.01em;
   }
 
-  /* Header oficial */
+  /* Header responsivo sin desborde en iPhone */
   header {
     background: var(--white);
     border-bottom: 1px solid var(--line);
     position: sticky;
     top: 0;
     z-index: 30;
-    padding: 12px 20px;
+    padding: 10px 16px;
     box-shadow: 0 2px 10px rgba(14, 34, 68, 0.04);
   }
   .header-inner {
@@ -66,60 +68,83 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
   }
   .brand {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     cursor: pointer;
     text-decoration: none;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .brand img {
+    height: 32px;
+    width: auto;
+    max-width: 170px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
   }
   .brand-divider {
     width: 1px;
-    height: 26px;
+    height: 22px;
     background: var(--line);
-    margin: 0 2px;
+    flex-shrink: 0;
   }
   .brand-tag {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     color: var(--ahumada-navy);
     background: var(--ahumada-navy-soft);
-    padding: 4px 10px;
+    padding: 4px 9px;
     border-radius: 999px;
+    white-space: nowrap;
   }
 
-  .nav-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
   .pill-btn {
     border: 1.5px solid var(--line);
     background: var(--white);
     color: var(--ahumada-navy);
-    padding: 7px 14px;
+    padding: 6px 12px;
     border-radius: 999px;
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.15s;
+    transition: border-color 0.15s, background-color 0.15s, color 0.15s;
   }
-  .pill-btn:hover { border-color: var(--ahumada-red); color: var(--ahumada-red); }
+  @media (hover: hover) and (pointer: fine) {
+    .pill-btn:hover { border-color: var(--ahumada-red); color: var(--ahumada-red); }
+    .option-card:hover { border-color: var(--ahumada-red); background: var(--ahumada-red-soft); }
+    .btn-primary:hover { background: var(--ahumada-red-dark); }
+    .btn-secondary:hover { border-color: var(--ahumada-navy); }
+    .cart-btn:hover { background: #173566; }
+    .btn-add:hover { background: var(--ahumada-red-dark); }
+    .btn-link:hover { border-color: var(--ahumada-navy); }
+    .btn-remove:hover { color: var(--ahumada-red); border-color: var(--ahumada-red-border); }
+  }
   .pill-btn.active { background: var(--ahumada-red); color: var(--white); border-color: var(--ahumada-red); }
   .cart-btn {
     background: var(--ahumada-navy);
     color: var(--white);
     border: none;
-    padding: 8px 16px;
+    padding: 7px 14px;
     border-radius: 999px;
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: 700;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 7px;
-    transition: background 0.15s;
+    gap: 6px;
   }
-  .cart-btn:hover { background: #173566; }
   .cart-badge {
     background: var(--ahumada-red);
     color: var(--white);
@@ -129,51 +154,50 @@
     font-weight: 800;
   }
 
+  @media (max-width: 640px) {
+    header { padding: 10px 14px; }
+    .header-inner { flex-direction: column; align-items: stretch; gap: 8px; }
+    .brand { justify-content: space-between; }
+    .brand-divider { display: none; }
+    .nav-actions { justify-content: space-between; }
+    .pill-btn { padding: 6px 10px; font-size: 12px; }
+  }
+
+  /* Sync bar oculta */
+  .sync-bar { display: none !important; }
+
   /* Main container */
   main {
     flex: 1;
     max-width: 880px;
     width: 100%;
-    margin: 24px auto 40px;
-    padding: 0 16px;
-  }
-  .sync-bar {
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 12px;
-    color: var(--muted);
-    background: var(--white);
-    border: 1px solid var(--line);
-    padding: 8px 14px;
-    border-radius: 12px;
-    margin-bottom: 16px;
-  }
-  .dot-live {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--ahumada-teal);
-    margin-right: 7px;
+    margin: 20px auto 40px;
+    padding: 0 14px;
   }
 
   .card {
     background: var(--white);
     border: 1px solid var(--line);
     border-radius: 20px;
-    padding: 28px;
+    padding: 24px 20px;
     box-shadow: 0 10px 28px rgba(14, 34, 68, 0.05);
   }
+  @media (min-width: 640px) {
+    .card { padding: 30px; }
+  }
 
-  .progress-wrap { margin-bottom: 22px; }
+  .progress-wrap { margin-bottom: 20px; }
   .progress-meta { display: flex; justify-content: space-between; font-size: 12px; font-weight: 800; color: var(--ahumada-navy); margin-bottom: 6px; }
-  .progress-track { width: 100%; height: 8px; background: #E2E8F0; border-radius: 999px; overflow: hidden; }
+  .progress-track { width: 100%; height: 7px; background: #E2E8F0; border-radius: 999px; overflow: hidden; }
   .progress-fill { height: 100%; background: linear-gradient(90deg, var(--ahumada-red), var(--ahumada-burgundy)); transition: width 0.25s ease; }
 
-  h1 { font-size: 26px; font-weight: 800; color: var(--ahumada-navy); letter-spacing: -0.02em; margin-bottom: 8px; }
-  h2 { font-size: 22px; font-weight: 800; color: var(--ahumada-navy); letter-spacing: -0.02em; margin-bottom: 8px; }
-  .lead { color: var(--muted); font-size: 15px; line-height: 1.5; margin-bottom: 22px; }
+  h1 { font-size: 24px; font-weight: 800; color: var(--ahumada-navy); letter-spacing: -0.02em; margin-bottom: 8px; line-height: 1.22; }
+  h2 { font-size: 21px; font-weight: 800; color: var(--ahumada-navy); letter-spacing: -0.02em; margin-bottom: 6px; line-height: 1.25; }
+  @media (min-width: 640px) {
+    h1 { font-size: 27px; }
+    h2 { font-size: 23px; }
+  }
+  .lead { color: var(--muted); font-size: 14.5px; line-height: 1.5; margin-bottom: 20px; }
 
   .field-group { margin-bottom: 20px; }
   .field-label { display: block; font-size: 13px; font-weight: 800; margin-bottom: 8px; color: var(--ahumada-navy); }
@@ -191,26 +215,30 @@
   .options-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-    gap: 12px;
-    margin-bottom: 22px;
+    gap: 11px;
+    margin-bottom: 20px;
   }
   .option-card {
     border: 1.5px solid var(--line);
     background: var(--white);
     border-radius: 16px;
-    padding: 16px 18px;
+    padding: 15px 17px;
     text-align: left;
     cursor: pointer;
-    transition: all 0.15s;
+    transition: border-color 0.14s, background-color 0.14s, transform 0.1s;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    outline: none;
   }
-  .option-card:hover { border-color: var(--ahumada-red); background: var(--ahumada-red-soft); }
-  .option-card.selected {
-    border-color: var(--ahumada-red);
-    background: var(--ahumada-red-soft);
-    box-shadow: 0 0 0 2px rgba(227, 6, 19, 0.14);
+  .option-card:active {
+    transform: scale(0.99);
+  }
+  .option-card.selected,
+  .option-card.flash-confirm {
+    border-color: var(--ahumada-red) !important;
+    background: var(--ahumada-red-soft) !important;
+    box-shadow: 0 0 0 2px rgba(227, 6, 19, 0.16);
   }
   .option-title { font-weight: 800; font-size: 15px; color: var(--ahumada-navy); }
   .option-desc { font-size: 13px; color: var(--muted); line-height: 1.4; }
@@ -227,7 +255,6 @@
     cursor: pointer;
     transition: background 0.15s;
   }
-  .btn-primary:hover { background: var(--ahumada-red-dark); }
   .btn-secondary {
     background: var(--white);
     color: var(--ahumada-navy);
@@ -238,9 +265,71 @@
     font-weight: 700;
     cursor: pointer;
   }
-  .btn-secondary:hover { border-color: var(--ahumada-navy); }
 
-  /* Resultados */
+  /* UX Benchmark: Tarjeta Resumen de Diagnóstico ("Tu Perfil") */
+  .profile-summary-box {
+    background: linear-gradient(135deg, var(--ahumada-navy) 0%, #17366B 100%);
+    color: var(--white);
+    border-radius: 16px;
+    padding: 16px 18px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .profile-summary-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .profile-badge-title {
+    font-size: 11.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #93C5FD;
+  }
+  .profile-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .profile-chip {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: var(--white);
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 4px 11px;
+    border-radius: 999px;
+  }
+
+  /* Banner superior de Rutina Completa (AOV booster) */
+  .routine-hero-cta {
+    background: var(--ahumada-red-soft);
+    border: 1.5px solid var(--ahumada-red-border);
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .routine-hero-info strong {
+    display: block;
+    font-size: 14.5px;
+    color: var(--ahumada-navy);
+  }
+  .routine-hero-info span {
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+
+  /* Budget switcher */
   .budget-switcher {
     display: flex;
     align-items: center;
@@ -249,30 +338,30 @@
     background: var(--ahumada-navy-soft);
     padding: 10px 14px;
     border-radius: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     border: 1px solid #DBEAFE;
   }
   .budget-switcher span { font-size: 13px; font-weight: 800; color: var(--ahumada-navy); margin-right: 4px; }
 
+  /* Product Cards + Recommendation Rationale */
   .product-list { display: flex; flex-direction: column; gap: 16px; margin-bottom: 24px; }
   .product-card {
     border: 1.5px solid var(--line);
     border-radius: 18px;
     padding: 18px;
     display: grid;
-    grid-template-columns: 116px 1fr;
-    gap: 18px;
-    align-items: center;
+    grid-template-columns: 112px 1fr;
+    gap: 16px;
+    align-items: start;
     background: var(--white);
-    transition: border-color 0.15s;
   }
-  .product-card:hover { border-color: #CBD5E1; }
   @media (max-width: 600px) {
     .product-card { grid-template-columns: 1fr; }
+    .product-img-box { width: 100%; height: 140px; }
   }
   .product-img-box {
-    width: 116px;
-    height: 116px;
+    width: 112px;
+    height: 112px;
     border-radius: 14px;
     border: 1px solid var(--line);
     background: var(--white);
@@ -317,6 +406,17 @@
   }
   .prod-brand { font-size: 12px; font-weight: 700; color: var(--muted); }
   .prod-title { font-size: 16px; font-weight: 800; color: var(--ahumada-navy); margin: 2px 0 6px; }
+  .rationale-pill {
+    background: #F0FDFA;
+    border: 1px solid #CCFBF1;
+    color: #0F766E;
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 6px 11px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    line-height: 1.35;
+  }
   .prod-desc { font-size: 13.5px; color: var(--muted); line-height: 1.45; margin-bottom: 8px; }
   .prod-meta { font-size: 12.5px; color: var(--ink); font-weight: 700; margin-bottom: 12px; }
   .prod-footer {
@@ -351,11 +451,8 @@
     gap: 4px;
   }
   .btn-add { background: var(--ahumada-red); color: var(--white); border: none; }
-  .btn-add:hover { background: var(--ahumada-red-dark); }
   .btn-link { background: var(--white); color: var(--ahumada-navy); border: 1.5px solid var(--line); }
-  .btn-link:hover { border-color: var(--ahumada-navy); }
   .btn-remove { background: #F8FAFC; color: var(--muted); border: 1px solid var(--line); }
-  .btn-remove:hover { color: var(--ahumada-red); border-color: var(--ahumada-red-border); }
 
   .excluded-bar {
     background: #FFFBEB;
@@ -436,8 +533,7 @@
 <header>
   <div class="header-inner">
     <a class="brand" data-action="reset" aria-label="Farmacias Ahumada">
-      <!-- Logo Vectorial Oficial Farmacias Ahumada -->
-    <img src="./logogogo.svg" alt="Farmacias Ahumada" style="height: 36px; width: auto; display: block;">
+      <img src="./logogogo.svg" alt="Farmacias Ahumada">
       <span class="brand-divider"></span>
       <span class="brand-tag">Asesor Digital</span>
     </a>
@@ -454,7 +550,7 @@
 
 <main>
   <div class="sync-bar">
-    <span><span class="dot-live"></span><strong id="catalog-status" style="color:var(--ahumada-navy);">Catálogo Farmacias Ahumada</strong></span>
+    <span><span class="dot-live"></span><strong id="catalog-status">Catálogo Farmacias Ahumada</strong></span>
     <span id="catalog-updated">Sincronizado</span>
   </div>
   <div id="app-root"></div>
@@ -480,7 +576,661 @@
 <div class="toast" id="toast"></div>
 
 <script>
-const FALLBACK_CATALOG = {"ultima_actualizacion": "2026-11-19T13:14:00-03:00", "total_productos": 25, "productos": [{"sku": "93447", "modulo": "Dermocosmetica", "paso": "Protector Solar", "presupuesto": "Medio", "marca": "ISDIN", "nombre": "Protector Solar Fusion Water Magic Repair Color FPS 50", "url": "https://www.farmaciasahumada.cl/producto-93447.html", "pieles": ["Grasa", "Mixta", "Normal"], "necesidades": ["Manchas", "Arrugas", "Brillo", "Nada en particular"], "textura": "Ligero", "beneficio": "Fotoprotector facial ultraligero con toque de color que protege del sol y repara el daño solar acumulado.", "cuando": "Todas las mañanas", "precio": 17569, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "96025", "modulo": "Dermocosmetica", "paso": "Protector Solar", "presupuesto": "Medio", "marca": "Uriage", "nombre": "Protector Solar Uriage Invisible Stick FPS 50 18 g", "url": "https://www.farmaciasahumada.cl/producto-96025.html", "pieles": ["Sensible", "Seca", "Normal"], "necesidades": ["Afeitado", "Irritación", "Manchas", "Nada en particular"], "textura": "Ligero", "beneficio": "Stick solar invisible de alta tolerancia dermatológica, práctico para reaplicar sin manchar las manos.", "cuando": "Todas las mañanas y reaplicación", "precio": 15990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "104521", "modulo": "Dermocosmetica", "paso": "Limpiador", "presupuesto": "Esencial", "marca": "CeraVe", "nombre": "Gel Limpiador Espumoso 236 ml", "url": "https://www.farmaciasahumada.cl/producto-104521.html", "pieles": ["Grasa", "Mixta", "Normal"], "necesidades": ["Brillo", "Poros", "Acné"], "textura": "Ligero", "beneficio": "Limpia el exceso de sebo sin dañar la barrera cutánea con 3 ceramidas esenciales y niacinamida.", "cuando": "Mañana y noche", "precio": 13990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "104522", "modulo": "Dermocosmetica", "paso": "Limpiador", "presupuesto": "Esencial", "marca": "CeraVe", "nombre": "Limpiador Hidratante 236 ml", "url": "https://www.farmaciasahumada.cl/producto-104522.html", "pieles": ["Seca", "Sensible", "Normal"], "necesidades": ["Tirantez", "Resequedad", "Irritación", "Afeitado"], "textura": "Cremoso", "beneficio": "Limpia suavemente sin hacer espuma ni resecar, aportando ácido hialurónico y ceramidas.", "cuando": "Mañana y noche", "precio": 13490, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "108910", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Esencial", "marca": "Garnier SkinActive", "nombre": "Sérum Anti-Imperfecciones AHA + BHA + Niacinamida 30 ml", "url": "https://www.farmaciasahumada.cl/producto-108910.html", "pieles": ["Grasa", "Mixta"], "necesidades": ["Brillo", "Acné", "Poros", "Manchas"], "textura": "Ligero", "beneficio": "Reduce marcas, controla el sebo y afina la textura de la piel con 4% de activos.", "cuando": "Noche (o mañana con FPS)", "precio": 12990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "108915", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Esencial", "marca": "Neutrogena", "nombre": "Hydro Boost Sérum Hidratante Concentrado 30 ml", "url": "https://www.farmaciasahumada.cl/producto-108915.html", "pieles": ["Seca", "Mixta", "Sensible"], "necesidades": ["Tirantez", "Resequedad", "Deshidratación", "Afeitado"], "textura": "Ligero", "beneficio": "Hidrata intensamente con ácido hialurónico de absorción inmediata sin sensación pesada.", "cuando": "Mañana y noche", "precio": 14990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "104530", "modulo": "Dermocosmetica", "paso": "Hidratante", "presupuesto": "Esencial", "marca": "Neutrogena", "nombre": "Hydro Boost Water Gel 50 g", "url": "https://www.farmaciasahumada.cl/producto-104530.html", "pieles": ["Grasa", "Mixta", "Normal"], "necesidades": ["Brillo", "Deshidratación", "Nada en particular"], "textura": "Ligero", "beneficio": "Gel de agua ultraligero libre de aceites que hidrata por 48 horas sin tapar poros.", "cuando": "Mañana y noche", "precio": 13990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "104535", "modulo": "Dermocosmetica", "paso": "Hidratante", "presupuesto": "Esencial", "marca": "CeraVe", "nombre": "Loción Hidratante de Rostro PM 52 ml", "url": "https://www.farmaciasahumada.cl/producto-104535.html", "pieles": ["Seca", "Sensible", "Normal"], "necesidades": ["Tirantez", "Resequedad", "Afeitado", "Irritación"], "textura": "Cremoso", "beneficio": "Calma y repara la barrera de la piel con niacinamida y ceramidas; ideal post-afeitado.", "cuando": "Mañana y noche", "precio": 14990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "109201", "modulo": "Dermocosmetica", "paso": "Protector Solar", "presupuesto": "Esencial", "marca": "Nivea Sun", "nombre": "Protector Solar Facial Control Brillo FPS 50 50 ml", "url": "https://www.farmaciasahumada.cl/producto-109201.html", "pieles": ["Grasa", "Mixta", "Normal"], "necesidades": ["Brillo", "Manchas", "Nada en particular"], "textura": "Ligero", "beneficio": "Protección solar diaria de efecto matificante inmediato y cero sensación grasosa.", "cuando": "Todas las mañanas", "precio": 11990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "109205", "modulo": "Dermocosmetica", "paso": "Protector Solar", "presupuesto": "Esencial", "marca": "CeraVe", "nombre": "Loción Hidratante de Rostro AM FPS 50 52 ml", "url": "https://www.farmaciasahumada.cl/producto-109205.html", "pieles": ["Seca", "Sensible", "Normal"], "necesidades": ["Tirantez", "Resequedad", "Afeitado", "Manchas"], "textura": "Cremoso", "beneficio": "Hidratante y protector solar 2 en 1 que protege contra rayos UV mientras calma la piel.", "cuando": "Todas las mañanas", "precio": 15990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "201101", "modulo": "Dermocosmetica", "paso": "Limpiador", "presupuesto": "Medio", "marca": "La Roche-Posay", "nombre": "Effaclar Gel Purificante Micro-Exfoliante 200 ml", "url": "https://www.farmaciasahumada.cl/producto-201101.html", "pieles": ["Grasa", "Mixta"], "necesidades": ["Brillo", "Acné", "Poros"], "textura": "Ligero", "beneficio": "Desobstruye poros y regula el exceso de sebo gracias al ácido salicílico y LHA.", "cuando": "Mañana y noche", "precio": 19990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "201105", "modulo": "Dermocosmetica", "paso": "Limpiador", "presupuesto": "Medio", "marca": "Bioderma", "nombre": "Sensibio Gel Moussant 200 ml", "url": "https://www.farmaciasahumada.cl/producto-201105.html", "pieles": ["Sensible", "Seca", "Normal"], "necesidades": ["Tirantez", "Irritación", "Afeitado", "Resequedad"], "textura": "Ligero", "beneficio": "Limpiador micelar ultra suave sin jabón ni perfume que calma la irritación al instante.", "cuando": "Mañana y noche", "precio": 18990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "202210", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Medio", "marca": "Eucerin", "nombre": "DermoPure Oil Control Sérum Triple Efecto 40 ml", "url": "https://www.farmaciasahumada.cl/producto-202210.html", "pieles": ["Grasa", "Mixta"], "necesidades": ["Acné", "Manchas", "Brillo", "Poros"], "textura": "Ligero", "beneficio": "Reduce marcas post-acné con Thiamidol patentado y controla el brillo durante el día.", "cuando": "Mañana y noche", "precio": 24990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "202215", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Medio", "marca": "Bioderma", "nombre": "Hydrabio Sérum Concentrado Hidratante 40 ml", "url": "https://www.farmaciasahumada.cl/producto-202215.html", "pieles": ["Seca", "Sensible", "Normal"], "necesidades": ["Tirantez", "Resequedad", "Deshidratación"], "textura": "Ligero", "beneficio": "Reactiva la hidratación natural de la piel devolviendo luminosidad y confort inmediato.", "cuando": "Mañana y noche", "precio": 23990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "203310", "modulo": "Dermocosmetica", "paso": "Hidratante", "presupuesto": "Medio", "marca": "La Roche-Posay", "nombre": "Effaclar Mat Hidratante Seborregulador 40 ml", "url": "https://www.farmaciasahumada.cl/producto-203310.html", "pieles": ["Grasa", "Mixta"], "necesidades": ["Brillo", "Poros", "Acné"], "textura": "Ligero", "beneficio": "Hidrata y matifica de forma duradera reduciendo el tamaño visible de los poros.", "cuando": "Mañana y noche", "precio": 22990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "203318", "modulo": "Dermocosmetica", "paso": "Hidratante", "presupuesto": "Medio", "marca": "La Roche-Posay", "nombre": "Cicaplast Baume B5+ Bálsamo Reparador 40 ml", "url": "https://www.farmaciasahumada.cl/producto-203318.html", "pieles": ["Seca", "Sensible", "Normal"], "necesidades": ["Afeitado", "Irritación", "Tirantez", "Resequedad"], "textura": "Cremoso", "beneficio": "Bálsamo calmante y reparador con pantenol al 5% y madecasoside; alivia rojeces al instante.", "cuando": "Noche o post-afeitado", "precio": 18990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "301101", "modulo": "Dermocosmetica", "paso": "Limpiador", "presupuesto": "Premium", "marca": "La Roche-Posay", "nombre": "Toleriane Dermo-Limpiador Fluido 200 ml", "url": "https://www.farmaciasahumada.cl/producto-301101.html", "pieles": ["Sensible", "Seca", "Normal"], "necesidades": ["Irritación", "Tirantez", "Afeitado", "Resequedad"], "textura": "Cremoso", "beneficio": "Fórmula minimalista sin tensioactivos agresivos para pieles intolerantes o reactivas.", "cuando": "Mañana y noche", "precio": 28990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "302201", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Premium", "marca": "Vichy", "nombre": "Minéral 89 Booster Fortificante e Hidratante 50 ml", "url": "https://www.farmaciasahumada.cl/producto-302201.html", "pieles": ["Grasa", "Mixta", "Sensible"], "necesidades": ["Deshidratación", "Afeitado", "Tirantez", "Nada en particular"], "textura": "Ligero", "beneficio": "89% de Agua Volcánica de Vichy + ácido hialurónico puro para fortalecer la barrera cutánea.", "cuando": "Mañana y noche", "precio": 31990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "302209", "modulo": "Dermocosmetica", "paso": "Serum", "presupuesto": "Premium", "marca": "La Roche-Posay", "nombre": "Hyalu B5 Sérum Anti-Arrugas Reparador 30 ml", "url": "https://www.farmaciasahumada.cl/producto-302209.html", "pieles": ["Seca", "Normal", "Sensible"], "necesidades": ["Arrugas", "Tirantez", "Resequedad", "Deshidratación"], "textura": "Ligero", "beneficio": "Rellena líneas finas y repara elasticidad con doble ácido hialurónico y vitamina B5.", "cuando": "Mañana y noche", "precio": 38990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "303305", "modulo": "Dermocosmetica", "paso": "Hidratante", "presupuesto": "Premium", "marca": "Avène", "nombre": "Hyaluron Activ B3 Crema Regeneradora Celular 50 ml", "url": "https://www.farmaciasahumada.cl/producto-303305.html", "pieles": ["Seca", "Normal", "Sensible"], "necesidades": ["Arrugas", "Tirantez", "Resequedad"], "textura": "Cremoso", "beneficio": "Concentrado con niacinamida al 6% y ácido hialurónico para firmeza y luminosidad profunda.", "cuando": "Mañana y noche", "precio": 36990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "304402", "modulo": "Dermocosmetica", "paso": "Protector Solar", "presupuesto": "Premium", "marca": "La Roche-Posay", "nombre": "Anthelios UVMune 400 Fluido Invisible FPS 50+ 50 ml", "url": "https://www.farmaciasahumada.cl/producto-304402.html", "pieles": ["Grasa", "Mixta", "Sensible"], "necesidades": ["Manchas", "Brillo", "Arrugas", "Nada en particular"], "textura": "Ligero", "beneficio": "Máxima protección frente a rayos UVA ultra-largos con textura fluida invisible ultra resistente.", "cuando": "Todas las mañanas", "precio": 29990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "401101", "modulo": "Belleza", "paso": "Prebase / Primer", "presupuesto": "Medio", "marca": "NYX Professional Makeup", "nombre": "The Marshmellow Primer Suavizante 30 ml", "url": "https://www.farmaciasahumada.cl/producto-401101.html", "pieles": ["Grasa", "Mixta", "Seca"], "necesidades": ["Poros", "Luminoso", "Natural"], "textura": "Ligero", "beneficio": "Suaviza textura, prolonga el maquillaje hasta 16 horas y unifica sin sensación pesada.", "cuando": "Antes de la base", "precio": 15990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "402201", "modulo": "Belleza", "paso": "Base / Tinte", "presupuesto": "Medio", "marca": "L'Oréal Paris", "nombre": "True Match Sérum con Color 1% Ácido Hialurónico 30 ml", "url": "https://www.farmaciasahumada.cl/producto-402201.html", "pieles": ["Seca", "Mixta", "Normal"], "necesidades": ["Natural", "Luminoso", "Cobertura media"], "textura": "Ligero", "beneficio": "Unifica el tono como un maquillaje mientras hidrata como un sérum con acabado piel real.", "cuando": "Uso diario", "precio": 16990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "403301", "modulo": "Belleza", "paso": "Corrector", "presupuesto": "Esencial", "marca": "Maybelline", "nombre": "Instant Age Rewind Eraser Corrector 6 ml", "url": "https://www.farmaciasahumada.cl/producto-403301.html", "pieles": ["Grasa", "Mixta", "Seca"], "necesidades": ["Natural", "Luminoso", "Cobertura media"], "textura": "Ligero", "beneficio": "Cubre ojeras e imperfecciones sin marcar líneas de expresión gracias a su aplicador esponja.", "cuando": "Después de la base", "precio": 9990, "imagen": "", "fuente": "respaldo_excel"}, {"sku": "404401", "modulo": "Belleza", "paso": "Fijación / Acabado", "presupuesto": "Esencial", "marca": "Essence", "nombre": "All About Matt! Polvo Compacto Fijador 8 g", "url": "https://www.farmaciasahumada.cl/producto-404401.html", "pieles": ["Grasa", "Mixta", "Normal"], "necesidades": ["Brillo", "Matte"], "textura": "Ligero", "beneficio": "Sella el maquillaje de forma translúcida y controla el brillo en la zona T todo el día.", "cuando": "Paso final", "precio": 4990, "imagen": "", "fuente": "respaldo_excel"}]};
+const FALLBACK_CATALOG = {
+  "ultima_actualizacion": "2026-11-19T13:14:00-03:00",
+  "total_productos": 25,
+  "productos": [
+    {
+      "sku": "93447",
+      "modulo": "Dermocosmetica",
+      "paso": "Protector Solar",
+      "presupuesto": "Medio",
+      "marca": "ISDIN",
+      "nombre": "Protector Solar Fusion Water Magic Repair Color FPS 50",
+      "url": "https://www.farmaciasahumada.cl/producto-93447.html",
+      "pieles": [
+        "Grasa",
+        "Mixta",
+        "Normal"
+      ],
+      "necesidades": [
+        "Manchas",
+        "Arrugas",
+        "Brillo",
+        "Nada en particular"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Fotoprotector facial ultraligero con toque de color que protege del sol y repara el daño solar acumulado.",
+      "cuando": "Todas las mañanas",
+      "precio": 17569,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "96025",
+      "modulo": "Dermocosmetica",
+      "paso": "Protector Solar",
+      "presupuesto": "Medio",
+      "marca": "Uriage",
+      "nombre": "Protector Solar Uriage Invisible Stick FPS 50 18 g",
+      "url": "https://www.farmaciasahumada.cl/producto-96025.html",
+      "pieles": [
+        "Sensible",
+        "Seca",
+        "Normal"
+      ],
+      "necesidades": [
+        "Afeitado",
+        "Irritación",
+        "Manchas",
+        "Nada en particular"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Stick solar invisible de alta tolerancia dermatológica, práctico para reaplicar sin manchar las manos.",
+      "cuando": "Todas las mañanas y reaplicación",
+      "precio": 15990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "104521",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Esencial",
+      "marca": "CeraVe",
+      "nombre": "Gel Limpiador Espumoso 236 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-104521.html",
+      "pieles": [
+        "Grasa",
+        "Mixta",
+        "Normal"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Poros",
+        "Acné"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Limpia el exceso de sebo sin dañar la barrera cutánea con 3 ceramidas esenciales y niacinamida.",
+      "cuando": "Mañana y noche",
+      "precio": 13990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "104522",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Esencial",
+      "marca": "CeraVe",
+      "nombre": "Limpiador Hidratante 236 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-104522.html",
+      "pieles": [
+        "Seca",
+        "Sensible",
+        "Normal"
+      ],
+      "necesidades": [
+        "Tirantez",
+        "Resequedad",
+        "Irritación",
+        "Afeitado"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Limpia suavemente sin hacer espuma ni resecar, aportando ácido hialurónico y ceramidas.",
+      "cuando": "Mañana y noche",
+      "precio": 13490,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "108910",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Esencial",
+      "marca": "Garnier SkinActive",
+      "nombre": "Sérum Anti-Imperfecciones AHA + BHA + Niacinamida 30 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-108910.html",
+      "pieles": [
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Acné",
+        "Poros",
+        "Manchas"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Reduce marcas, controla el sebo y afina la textura de la piel con 4% de activos.",
+      "cuando": "Noche (o mañana con FPS)",
+      "precio": 12990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "108915",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Esencial",
+      "marca": "Neutrogena",
+      "nombre": "Hydro Boost Sérum Hidratante Concentrado 30 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-108915.html",
+      "pieles": [
+        "Seca",
+        "Mixta",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Tirantez",
+        "Resequedad",
+        "Deshidratación",
+        "Afeitado"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidrata intensamente con ácido hialurónico de absorción inmediata sin sensación pesada.",
+      "cuando": "Mañana y noche",
+      "precio": 14990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "104530",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Esencial",
+      "marca": "Neutrogena",
+      "nombre": "Hydro Boost Water Gel 50 g",
+      "url": "https://www.farmaciasahumada.cl/producto-104530.html",
+      "pieles": [
+        "Grasa",
+        "Mixta",
+        "Normal"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Deshidratación",
+        "Nada en particular"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Gel de agua ultraligero libre de aceites que hidrata por 48 horas sin tapar poros.",
+      "cuando": "Mañana y noche",
+      "precio": 13990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "104535",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Esencial",
+      "marca": "CeraVe",
+      "nombre": "Loción Hidratante de Rostro PM 52 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-104535.html",
+      "pieles": [
+        "Seca",
+        "Sensible",
+        "Normal"
+      ],
+      "necesidades": [
+        "Tirantez",
+        "Resequedad",
+        "Afeitado",
+        "Irritación"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Calma y repara la barrera de la piel con niacinamida y ceramidas; ideal post-afeitado.",
+      "cuando": "Mañana y noche",
+      "precio": 14990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "109201",
+      "modulo": "Dermocosmetica",
+      "paso": "Protector Solar",
+      "presupuesto": "Esencial",
+      "marca": "Nivea Sun",
+      "nombre": "Protector Solar Facial Control Brillo FPS 50 50 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-109201.html",
+      "pieles": [
+        "Grasa",
+        "Mixta",
+        "Normal"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Manchas",
+        "Nada en particular"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Protección solar diaria de efecto matificante inmediato y cero sensación grasosa.",
+      "cuando": "Todas las mañanas",
+      "precio": 11990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "109205",
+      "modulo": "Dermocosmetica",
+      "paso": "Protector Solar",
+      "presupuesto": "Esencial",
+      "marca": "CeraVe",
+      "nombre": "Loción Hidratante de Rostro AM FPS 50 52 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-109205.html",
+      "pieles": [
+        "Seca",
+        "Sensible",
+        "Normal"
+      ],
+      "necesidades": [
+        "Tirantez",
+        "Resequedad",
+        "Afeitado",
+        "Manchas"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Hidratante y protector solar 2 en 1 que protege contra rayos UV mientras calma la piel.",
+      "cuando": "Todas las mañanas",
+      "precio": 15990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "201101",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Medio",
+      "marca": "La Roche-Posay",
+      "nombre": "Effaclar Gel Purificante Micro-Exfoliante 200 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-201101.html",
+      "pieles": [
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Acné",
+        "Poros"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Desobstruye poros y regula el exceso de sebo gracias al ácido salicílico y LHA.",
+      "cuando": "Mañana y noche",
+      "precio": 19990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "201105",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Medio",
+      "marca": "Bioderma",
+      "nombre": "Sensibio Gel Moussant 200 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-201105.html",
+      "pieles": [
+        "Sensible",
+        "Seca",
+        "Normal"
+      ],
+      "necesidades": [
+        "Tirantez",
+        "Irritación",
+        "Afeitado",
+        "Resequedad"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Limpiador micelar ultra suave sin jabón ni perfume que calma la irritación al instante.",
+      "cuando": "Mañana y noche",
+      "precio": 18990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "202210",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Medio",
+      "marca": "Eucerin",
+      "nombre": "DermoPure Oil Control Sérum Triple Efecto 40 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-202210.html",
+      "pieles": [
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Acné",
+        "Manchas",
+        "Brillo",
+        "Poros"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Reduce marcas post-acné con Thiamidol patentado y controla el brillo durante el día.",
+      "cuando": "Mañana y noche",
+      "precio": 24990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "202215",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Medio",
+      "marca": "Bioderma",
+      "nombre": "Hydrabio Sérum Concentrado Hidratante 40 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-202215.html",
+      "pieles": [
+        "Seca",
+        "Sensible",
+        "Normal"
+      ],
+      "necesidades": [
+        "Tirantez",
+        "Resequedad",
+        "Deshidratación"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Reactiva la hidratación natural de la piel devolviendo luminosidad y confort inmediato.",
+      "cuando": "Mañana y noche",
+      "precio": 23990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "203310",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "La Roche-Posay",
+      "nombre": "Effaclar Mat Hidratante Seborregulador 40 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-203310.html",
+      "pieles": [
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Poros",
+        "Acné"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidrata y matifica de forma duradera reduciendo el tamaño visible de los poros.",
+      "cuando": "Mañana y noche",
+      "precio": 22990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "203318",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "La Roche-Posay",
+      "nombre": "Cicaplast Baume B5+ Bálsamo Reparador 40 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-203318.html",
+      "pieles": [
+        "Seca",
+        "Sensible",
+        "Normal"
+      ],
+      "necesidades": [
+        "Afeitado",
+        "Irritación",
+        "Tirantez",
+        "Resequedad"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Bálsamo calmante y reparador con pantenol al 5% y madecasoside; alivia rojeces al instante.",
+      "cuando": "Noche o post-afeitado",
+      "precio": 18990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "301101",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Premium",
+      "marca": "La Roche-Posay",
+      "nombre": "Toleriane Dermo-Limpiador Fluido 200 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-301101.html",
+      "pieles": [
+        "Sensible",
+        "Seca",
+        "Normal"
+      ],
+      "necesidades": [
+        "Irritación",
+        "Tirantez",
+        "Afeitado",
+        "Resequedad"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Fórmula minimalista sin tensioactivos agresivos para pieles intolerantes o reactivas.",
+      "cuando": "Mañana y noche",
+      "precio": 28990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "302201",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Premium",
+      "marca": "Vichy",
+      "nombre": "Minéral 89 Booster Fortificante e Hidratante 50 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-302201.html",
+      "pieles": [
+        "Grasa",
+        "Mixta",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Deshidratación",
+        "Afeitado",
+        "Tirantez",
+        "Nada en particular"
+      ],
+      "textura": "Ligero",
+      "beneficio": "89% de Agua Volcánica de Vichy + ácido hialurónico puro para fortalecer la barrera cutánea.",
+      "cuando": "Mañana y noche",
+      "precio": 31990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "302209",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Premium",
+      "marca": "La Roche-Posay",
+      "nombre": "Hyalu B5 Sérum Anti-Arrugas Reparador 30 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-302209.html",
+      "pieles": [
+        "Seca",
+        "Normal",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Arrugas",
+        "Tirantez",
+        "Resequedad",
+        "Deshidratación"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Rellena líneas finas y repara elasticidad con doble ácido hialurónico y vitamina B5.",
+      "cuando": "Mañana y noche",
+      "precio": 38990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "303305",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Premium",
+      "marca": "Avène",
+      "nombre": "Hyaluron Activ B3 Crema Regeneradora Celular 50 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-303305.html",
+      "pieles": [
+        "Seca",
+        "Normal",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Arrugas",
+        "Tirantez",
+        "Resequedad"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Concentrado con niacinamida al 6% y ácido hialurónico para firmeza y luminosidad profunda.",
+      "cuando": "Mañana y noche",
+      "precio": 36990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "304402",
+      "modulo": "Dermocosmetica",
+      "paso": "Protector Solar",
+      "presupuesto": "Premium",
+      "marca": "La Roche-Posay",
+      "nombre": "Anthelios UVMune 400 Fluido Invisible FPS 50+ 50 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-304402.html",
+      "pieles": [
+        "Grasa",
+        "Mixta",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Manchas",
+        "Brillo",
+        "Arrugas",
+        "Nada en particular"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Máxima protección frente a rayos UVA ultra-largos con textura fluida invisible ultra resistente.",
+      "cuando": "Todas las mañanas",
+      "precio": 29990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "401101",
+      "modulo": "Belleza",
+      "paso": "Prebase / Primer",
+      "presupuesto": "Medio",
+      "marca": "NYX Professional Makeup",
+      "nombre": "The Marshmellow Primer Suavizante 30 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-401101.html",
+      "pieles": [
+        "Grasa",
+        "Mixta",
+        "Seca"
+      ],
+      "necesidades": [
+        "Poros",
+        "Luminoso",
+        "Natural"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Suaviza textura, prolonga el maquillaje hasta 16 horas y unifica sin sensación pesada.",
+      "cuando": "Antes de la base",
+      "precio": 15990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "402201",
+      "modulo": "Belleza",
+      "paso": "Base / Tinte",
+      "presupuesto": "Medio",
+      "marca": "L'Oréal Paris",
+      "nombre": "True Match Sérum con Color 1% Ácido Hialurónico 30 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-402201.html",
+      "pieles": [
+        "Seca",
+        "Mixta",
+        "Normal"
+      ],
+      "necesidades": [
+        "Natural",
+        "Luminoso",
+        "Cobertura media"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Unifica el tono como un maquillaje mientras hidrata como un sérum con acabado piel real.",
+      "cuando": "Uso diario",
+      "precio": 16990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "403301",
+      "modulo": "Belleza",
+      "paso": "Corrector",
+      "presupuesto": "Esencial",
+      "marca": "Maybelline",
+      "nombre": "Instant Age Rewind Eraser Corrector 6 ml",
+      "url": "https://www.farmaciasahumada.cl/producto-403301.html",
+      "pieles": [
+        "Grasa",
+        "Mixta",
+        "Seca"
+      ],
+      "necesidades": [
+        "Natural",
+        "Luminoso",
+        "Cobertura media"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Cubre ojeras e imperfecciones sin marcar líneas de expresión gracias a su aplicador esponja.",
+      "cuando": "Después de la base",
+      "precio": 9990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    },
+    {
+      "sku": "404401",
+      "modulo": "Belleza",
+      "paso": "Fijación / Acabado",
+      "presupuesto": "Esencial",
+      "marca": "Essence",
+      "nombre": "All About Matt! Polvo Compacto Fijador 8 g",
+      "url": "https://www.farmaciasahumada.cl/producto-404401.html",
+      "pieles": [
+        "Grasa",
+        "Mixta",
+        "Normal"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Matte"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Sella el maquillaje de forma translúcida y controla el brillo en la zona T todo el día.",
+      "cuando": "Paso final",
+      "precio": 4990,
+      "imagen": "",
+      "fuente": "respaldo_excel"
+    }
+  ]
+};
+
+function createEmptyAnswers() {
+  return {
+    piel: "",
+    necesidad: "",
+    textura: "",
+    presupuesto: "",
+    menNota: "",
+    menUsa: [],
+    menTextura: "",
+    menInicio: "",
+    beautyCobertura: "",
+    beautyAcabado: ""
+  };
+}
 
 const state = {
   catalog: FALLBACK_CATALOG.productos || [],
@@ -488,22 +1238,12 @@ const state = {
   sourceMode: "respaldo",
   screen: "welcome",
   stepIndex: 0,
+  isAdvancing: false,
   name: "",
-  gender: "Hombre",
+  gender: "",
   module: "Dermocosmetica",
   isMenBeginner: false,
-  answers: {
-    piel: "Mixta",
-    necesidad: "Brillo",
-    textura: "Ligero",
-    presupuesto: "Medio",
-    menNota: "Brillo",
-    menUsa: ["Solo agua"],
-    menTextura: "Ligero",
-    menInicio: "Con una rutina básica",
-    beautyCobertura: "Natural",
-    beautyAcabado: "Luminoso"
-  },
+  answers: createEmptyAnswers(),
   excludedSkus: [],
   cart: []
 };
@@ -520,23 +1260,7 @@ async function loadCatalog() {
       }
     }
   } catch (e) {}
-  updateSyncBanner();
   render();
-}
-
-function updateSyncBanner() {
-  const statusEl = document.getElementById("catalog-status");
-  const updatedEl = document.getElementById("catalog-updated");
-  if (!statusEl || !updatedEl) return;
-  statusEl.textContent = state.sourceMode === "vivo"
-    ? `Catálogo en vivo (${state.catalog.length} productos activos)`
-    : `Catálogo cargado (${state.catalog.length} productos)`;
-  if (state.updatedAt) {
-    const d = new Date(state.updatedAt);
-    if (!isNaN(d.getTime())) {
-      updatedEl.textContent = "Act: " + d.toLocaleDateString("es-CL") + " " + d.toLocaleTimeString("es-CL", {hour: "2-digit", minute: "2-digit"});
-    }
-  }
 }
 
 function formatCLP(num) {
@@ -550,8 +1274,47 @@ function showToast(msg) {
   setTimeout(() => { t.style.display = "none"; }, 2600);
 }
 
+function buildRationale(prod, profile) {
+  if (state.module === "Belleza") {
+    return `Seleccionado para lograr un acabado ${profile.acabado.toLowerCase()} con cobertura ${profile.cobertura.toLowerCase()}.`;
+  }
+  const parts = [];
+  if (profile.skin) parts.push(`piel ${profile.skin.toLowerCase()}`);
+  if (profile.need && profile.need !== "Nada en particular") parts.push(`objetivo ${profile.need.toLowerCase()}`);
+  if (profile.texture) parts.push(`textura ${profile.texture.toLowerCase()}`);
+  return parts.length
+    ? `Elegido porque buscabas cuidado para ${parts.join(" · ")}.`
+    : `Fórmula dermatológica equilibrada para tu rutina diaria.`;
+}
+
+function getResolvedProfile() {
+  if (state.module === "Belleza") {
+    return {
+      cobertura: state.answers.beautyCobertura || "Natural",
+      acabado: state.answers.beautyAcabado || "Luminoso"
+    };
+  }
+  const budget = state.answers.presupuesto || "Medio";
+  if (state.isMenBeginner) {
+    const texture = (state.answers.menTextura && state.answers.menTextura !== "Sin preferencia") ? state.answers.menTextura : "";
+    const nota = state.answers.menNota;
+    let skin = "Normal", need = "Nada en particular";
+    if (nota === "Brillo") { skin = "Grasa"; need = "Brillo"; }
+    else if (nota === "Tirantez o resequedad") { skin = "Seca"; need = "Tirantez"; }
+    else if (nota === "Molestias después del afeitado") { skin = "Sensible"; need = "Afeitado"; }
+    return { skin, need, texture, budget };
+  }
+  return {
+    skin: state.answers.piel || "Mixta",
+    need: state.answers.necesidad || "Brillo",
+    texture: state.answers.textura || "",
+    budget
+  };
+}
+
 function getRecommendedProducts() {
   const active = state.catalog.filter(p => !state.excludedSkus.includes(p.sku));
+  const profile = getResolvedProfile();
 
   if (state.module === "Belleza") {
     const pasos = ["Prebase / Primer", "Base / Tinte", "Corrector", "Fijación / Acabado"];
@@ -561,28 +1324,14 @@ function getRecommendedProducts() {
       if (candidatos.length > 0) {
         const match = candidatos.find(c =>
           c.necesidades.some(n =>
-            n.toLowerCase().includes(state.answers.beautyCobertura.toLowerCase()) ||
-            n.toLowerCase().includes(state.answers.beautyAcabado.toLowerCase())
+            n.toLowerCase().includes(profile.cobertura.toLowerCase()) ||
+            n.toLowerCase().includes(profile.acabado.toLowerCase())
           )
         ) || candidatos[0];
-        selected.push({ ...match, isOptional: false });
+        selected.push({ ...match, isOptional: false, rationale: buildRationale(match, profile) });
       }
     });
     return selected;
-  }
-
-  const budget = state.answers.presupuesto || "Medio";
-  let targetSkin = state.answers.piel;
-  let targetNeed = state.answers.necesidad;
-  let targetTexture = state.answers.textura;
-
-  if (state.isMenBeginner) {
-    targetTexture = state.answers.menTextura === "Sin preferencia" ? "" : state.answers.menTextura;
-    const nota = state.answers.menNota;
-    if (nota === "Brillo") { targetSkin = "Grasa"; targetNeed = "Brillo"; }
-    else if (nota === "Tirantez o resequedad") { targetSkin = "Seca"; targetNeed = "Tirantez"; }
-    else if (nota === "Molestias después del afeitado") { targetSkin = "Sensible"; targetNeed = "Afeitado"; }
-    else { targetSkin = "Normal"; targetNeed = "Nada en particular"; }
   }
 
   const dermoPool = active.filter(p => p.modulo === "Dermocosmetica");
@@ -590,26 +1339,27 @@ function getRecommendedProducts() {
   function pickBestForStep(paso) {
     let pool = dermoPool.filter(p =>
       p.paso === paso &&
-      p.presupuesto === budget &&
-      p.pieles.some(s => s.toLowerCase() === targetSkin.toLowerCase())
+      p.presupuesto === profile.budget &&
+      p.pieles.some(s => s.toLowerCase() === profile.skin.toLowerCase())
     );
     if (pool.length === 0) {
       pool = dermoPool.filter(p =>
         p.paso === paso &&
-        p.pieles.some(s => s.toLowerCase() === targetSkin.toLowerCase())
+        p.pieles.some(s => s.toLowerCase() === profile.skin.toLowerCase())
       );
     }
     if (pool.length === 0) return null;
 
     pool.sort((a, b) => {
       let scoreA = 0, scoreB = 0;
-      if (a.necesidades.some(n => n.toLowerCase().includes(targetNeed.toLowerCase()))) scoreA += 3;
-      if (b.necesidades.some(n => n.toLowerCase().includes(targetNeed.toLowerCase()))) scoreB += 3;
-      if (targetTexture && a.textura.toLowerCase() === targetTexture.toLowerCase()) scoreA += 2;
-      if (targetTexture && b.textura.toLowerCase() === targetTexture.toLowerCase()) scoreB += 2;
+      if (a.necesidades.some(n => n.toLowerCase().includes(profile.need.toLowerCase()))) scoreA += 3;
+      if (b.necesidades.some(n => n.toLowerCase().includes(profile.need.toLowerCase()))) scoreB += 3;
+      if (profile.texture && a.textura.toLowerCase() === profile.texture.toLowerCase()) scoreA += 2;
+      if (profile.texture && b.textura.toLowerCase() === profile.texture.toLowerCase()) scoreB += 2;
       return scoreB - scoreA;
     });
-    return pool[0];
+    const chosen = pool[0];
+    return { ...chosen, rationale: buildRationale(chosen, profile) };
   }
 
   if (state.isMenBeginner) {
@@ -769,6 +1519,10 @@ function render() {
   const root = document.getElementById("app-root");
   if (!root) return;
 
+  if (document.activeElement && document.activeElement.tagName === "BUTTON") {
+    document.activeElement.blur();
+  }
+
   if (state.screen === "welcome") {
     root.innerHTML = `
       <div class="card">
@@ -781,7 +1535,7 @@ function render() {
         </div>
 
         <div class="field-group">
-          <label class="field-label">Género</label>
+          <label class="field-label">Género (Opcional)</label>
           <div class="options-grid">
             ${["Hombre", "Mujer", "Prefiero no decir"].map(g => `
               <button type="button" class="option-card ${state.gender === g ? "selected" : ""}" data-action="select-gender" data-val="${g}">
@@ -844,7 +1598,7 @@ function render() {
     const currentVal = state.answers[q.key];
 
     root.innerHTML = `
-      <div class="card">
+      <div class="card" data-step-uid="${state.screen}-${state.stepIndex}">
         <div class="progress-wrap">
           <div class="progress-meta">
             <span>Paso ${state.stepIndex + 1} de ${list.length}</span>
@@ -857,12 +1611,12 @@ function render() {
         <p class="lead">${q.sub}</p>
 
         <div class="options-grid">
-          ${q.options.map(opt => {
+          ${q.options.map((opt, idx) => {
             const isSelected = q.type === "multi"
               ? Array.isArray(currentVal) && currentVal.includes(opt.val)
               : currentVal === opt.val;
             return `
-              <button type="button" class="option-card ${isSelected ? "selected" : ""}"
+              <button type="button" id="opt-${state.stepIndex}-${idx}" class="option-card ${isSelected ? "selected" : ""}"
                 data-action="${q.type === "multi" ? "toggle-multi" : "answer-single"}"
                 data-key="${q.key}" data-val="${opt.val}">
                 <span class="option-title">${opt.val}</span>
@@ -883,6 +1637,7 @@ function render() {
 
   if (state.screen === "results") {
     const recs = getRecommendedProducts();
+    const profile = getResolvedProfile();
     const totalRutina = recs.filter(r => !r.isOptional).reduce((acc, p) => acc + p.precio, 0);
     const nombre = state.name.trim();
 
@@ -890,14 +1645,44 @@ function render() {
       ? (nombre ? `${nombre}, tu primera rutina, sin complicarte` : "Tu primera rutina, sin complicarte")
       : (nombre ? `${nombre}, esta es tu rutina recomendada` : "Tu rutina recomendada en Farmacias Ahumada");
 
-    const subtitulo = state.isMenBeginner
-      ? "Fórmulas probadas y fáciles de usar, elegidas según lo que nos contaste."
-      : "Productos filtrados directamente desde la matriz de rutas de Farmacias Ahumada.";
+    const profileChips = state.module === "Belleza"
+      ? [
+          `Cobertura: ${profile.cobertura}`,
+          `Acabado: ${profile.acabado}`
+        ]
+      : [
+          `Piel: ${profile.skin}`,
+          `Objetivo: ${profile.need}`,
+          profile.texture ? `Textura: ${profile.texture}` : null,
+          `Nivel: ${profile.budget}`
+        ].filter(Boolean);
 
     root.innerHTML = `
       <div class="card">
         <h1>${titulo}</h1>
-        <p class="lead">${subtitulo}</p>
+        <p class="lead">Armamos tus pasos conectados para potenciar resultados en tu piel.</p>
+
+        <div class="profile-summary-box">
+          <div class="profile-summary-top">
+            <span class="profile-badge-title">Tu Diagnóstico</span>
+            <button type="button" class="pill-btn" style="padding:4px 10px;font-size:11.5px;" data-action="reset">Cambiar respuestas</button>
+          </div>
+          <div class="profile-chips">
+            ${profileChips.map(ch => `<span class="profile-chip">${ch}</span>`).join("")}
+          </div>
+        </div>
+
+        ${recs.length > 0 ? `
+          <div class="routine-hero-cta">
+            <div class="routine-hero-info">
+              <strong>Rutina completa (${recs.filter(r => !r.isOptional).length} productos)</strong>
+              <span>Total estimado: ${formatCLP(totalRutina)}</span>
+            </div>
+            <button type="button" class="btn-primary" style="padding:10px 18px;font-size:13.5px;" data-action="add-all">
+              Agregar rutina completa
+            </button>
+          </div>
+        ` : ""}
 
         ${state.module === "Dermocosmetica" ? `
           <div class="budget-switcher">
@@ -934,6 +1719,7 @@ function render() {
                 </div>
                 <div class="prod-brand">${p.marca} · SKU ${p.sku}</div>
                 <div class="prod-title">${p.nombre}</div>
+                <div class="rationale-pill">${p.rationale}</div>
                 <div class="prod-desc">${p.beneficio}</div>
                 <div class="prod-meta">Cuándo usarlo: ${p.cuando}</div>
                 <div class="prod-footer">
@@ -1005,13 +1791,15 @@ document.addEventListener("click", (e) => {
     case "reset":
       state.screen = "welcome";
       state.stepIndex = 0;
+      state.isAdvancing = false;
       state.isMenBeginner = false;
+      state.answers = createEmptyAnswers();
       state.excludedSkus = [];
       render();
       break;
 
     case "select-gender":
-      state.gender = target.dataset.val;
+      state.gender = state.gender === target.dataset.val ? "" : target.dataset.val;
       render();
       break;
 
@@ -1019,6 +1807,8 @@ document.addEventListener("click", (e) => {
     case "quick-module":
       state.module = target.dataset.module;
       state.stepIndex = 0;
+      state.isAdvancing = false;
+      state.answers = createEmptyAnswers();
       state.excludedSkus = [];
       if (state.module === "Belleza") {
         state.isMenBeginner = false;
@@ -1040,16 +1830,27 @@ document.addEventListener("click", (e) => {
       break;
 
     case "answer-single": {
+      if (state.isAdvancing) return;
+      state.isAdvancing = true;
       const key = target.dataset.key;
       const val = target.dataset.val;
       state.answers[key] = val;
-      const list = state.screen === "men_quiz" ? MEN_QUESTIONS : (state.screen === "dermo_quiz" ? DERMO_QUESTIONS : BEAUTY_QUESTIONS);
-      if (state.stepIndex < list.length - 1) {
-        state.stepIndex++;
-      } else {
-        state.screen = "results";
-      }
-      render();
+
+      // Micro-confirmación visual limpia de 180 ms sin sticky hover
+      document.querySelectorAll(".option-card").forEach(c => c.classList.remove("selected", "flash-confirm"));
+      target.classList.add("flash-confirm");
+
+      setTimeout(() => {
+        const list = state.screen === "men_quiz" ? MEN_QUESTIONS : (state.screen === "dermo_quiz" ? DERMO_QUESTIONS : BEAUTY_QUESTIONS);
+        if (state.stepIndex < list.length - 1) {
+          state.stepIndex++;
+        } else {
+          state.screen = "results";
+        }
+        state.isAdvancing = false;
+        render();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 180);
       break;
     }
 
@@ -1063,7 +1864,7 @@ document.addEventListener("click", (e) => {
         if (val === "Solo agua") arr = ["Solo agua"];
         else arr = arr.filter(x => x !== "Solo agua").concat(val);
       }
-      state.answers[key] = arr.length ? arr : ["Solo agua"];
+      state.answers[key] = arr;
       render();
       break;
     }
@@ -1073,10 +1874,12 @@ document.addEventListener("click", (e) => {
       if (state.stepIndex < list.length - 1) state.stepIndex++;
       else state.screen = "results";
       render();
+      window.scrollTo({ top: 0, behavior: "smooth" });
       break;
     }
 
     case "prev-step":
+      state.isAdvancing = false;
       if (state.stepIndex > 0) {
         state.stepIndex--;
       } else if (state.gender === "Hombre" && state.module === "Dermocosmetica") {
