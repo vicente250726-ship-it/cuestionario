@@ -1,6 +1,6 @@
 {
-  "ultima_actualizacion": "2026-11-19T13:14:00-03:00",
-  "total_productos": 25,
+  "ultima_actualizacion": "2026-11-19T16:52:24.645314+00:00",
+  "total_productos": 50,
   "productos": [
     {
       "sku": "93447",
@@ -9,7 +9,7 @@
       "presupuesto": "Medio",
       "marca": "ISDIN",
       "nombre": "Protector Solar Fusion Water Magic Repair Color FPS 50",
-      "url": "https://www.farmaciasahumada.cl/producto-93447.html",
+      "url": "https://www.farmaciasahumada.cl/protector-solar-isdin-fusion-water-magic-repair-color-fps-50-93447.html",
       "pieles": [
         "Grasa",
         "Mixta",
@@ -24,617 +24,1196 @@
       "textura": "Ligero",
       "beneficio": "Fotoprotector facial ultraligero con toque de color que protege del sol y repara el daño solar acumulado.",
       "cuando": "Todas las mañanas",
-      "precio": 17569,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "precio": 19290,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw3c5dbe09/images/products/93447/93447.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "96025",
+      "sku": "77546",
       "modulo": "Dermocosmetica",
-      "paso": "Protector Solar",
+      "paso": "Limpiador",
       "presupuesto": "Medio",
-      "marca": "Uriage",
-      "nombre": "Protector Solar Uriage Invisible Stick FPS 50 18 g",
-      "url": "https://www.farmaciasahumada.cl/producto-96025.html",
-      "pieles": [
-        "Sensible",
-        "Seca",
-        "Normal"
-      ],
-      "necesidades": [
-        "Afeitado",
-        "Irritación",
-        "Manchas",
-        "Nada en particular"
-      ],
-      "textura": "Ligero",
-      "beneficio": "Stick solar invisible de alta tolerancia dermatológica, práctico para reaplicar sin manchar las manos.",
-      "cuando": "Todas las mañanas y reaplicación",
-      "precio": 15990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "104521",
-      "modulo": "Dermocosmetica",
-      "paso": "Limpiador",
-      "presupuesto": "Esencial",
-      "marca": "CeraVe",
-      "nombre": "Gel Limpiador Espumoso 236 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-104521.html",
-      "pieles": [
-        "Grasa",
-        "Mixta",
-        "Normal"
-      ],
-      "necesidades": [
-        "Brillo",
-        "Poros",
-        "Acné"
-      ],
-      "textura": "Ligero",
-      "beneficio": "Limpia el exceso de sebo sin dañar la barrera cutánea con 3 ceramidas esenciales y niacinamida.",
-      "cuando": "Mañana y noche",
-      "precio": 13990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "104522",
-      "modulo": "Dermocosmetica",
-      "paso": "Limpiador",
-      "presupuesto": "Esencial",
-      "marca": "CeraVe",
-      "nombre": "Limpiador Hidratante 236 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-104522.html",
-      "pieles": [
-        "Seca",
-        "Sensible",
-        "Normal"
-      ],
-      "necesidades": [
-        "Tirantez",
-        "Resequedad",
-        "Irritación",
-        "Afeitado"
-      ],
-      "textura": "Cremoso",
-      "beneficio": "Limpia suavemente sin hacer espuma ni resecar, aportando ácido hialurónico y ceramidas.",
-      "cuando": "Mañana y noche",
-      "precio": 13490,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "108910",
-      "modulo": "Dermocosmetica",
-      "paso": "Serum",
-      "presupuesto": "Esencial",
-      "marca": "Garnier SkinActive",
-      "nombre": "Sérum Anti-Imperfecciones AHA + BHA + Niacinamida 30 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-108910.html",
+      "marca": "La Roche Posay",
+      "nombre": "Limpiador La Roche Posay Facial Effaclar Gel Purificante 400 mL",
+      "url": "https://www.farmaciasahumada.cl/limpiador-la-roche-posay-facial-effaclar-gel-purificante-400-ml-77546.html",
       "pieles": [
         "Grasa",
         "Mixta"
       ],
       "necesidades": [
         "Brillo",
+        "Acné"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Limpia impurezas y exceso de grasa en piel con tendencia a imperfecciones.",
+      "cuando": "Mañana y noche; masajear sobre piel húmeda y enjuagar.",
+      "precio": 25099,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwc48dfdac/images/products/77546/77546.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "89156",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Premium",
+      "marca": "La Roche Posay",
+      "nombre": "Serum La Roche Posay Anti Imperfecciones Effaclar Ultra Concentrado 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-la-roche-posay-anti-imperfecciones-effaclar-ultra-concentrado-30-ml-89156.html",
+      "pieles": [
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
         "Acné",
         "Poros",
         "Manchas"
       ],
       "textura": "Ligero",
-      "beneficio": "Reduce marcas, controla el sebo y afina la textura de la piel con 4% de activos.",
-      "cuando": "Noche (o mañana con FPS)",
-      "precio": 12990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "beneficio": "Ayuda a reducir imperfecciones, marcas persistentes y apariencia de poros mediante exfoliación.",
+      "cuando": "Por la noche, sobre piel seca; no combinar con otros exfoliantes. Fotoprotección de día.",
+      "precio": 43649,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw4ba8c0f5/images/products/89156/89156.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "108915",
+      "sku": "87901",
       "modulo": "Dermocosmetica",
       "paso": "Serum",
-      "presupuesto": "Esencial",
-      "marca": "Neutrogena",
-      "nombre": "Hydro Boost Sérum Hidratante Concentrado 30 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-108915.html",
+      "presupuesto": "Premium",
+      "marca": "La Roche Posay",
+      "nombre": "Serum La Roche Posay Retinol B3 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-la-roche-posay-retinol-b3-30-ml-87901.html",
       "pieles": [
-        "Seca",
+        "Normal",
         "Mixta",
-        "Sensible"
+        "Seca"
       ],
       "necesidades": [
-        "Tirantez",
-        "Resequedad",
-        "Deshidratación",
-        "Afeitado"
+        "Arrugas",
+        "Manchas"
       ],
       "textura": "Ligero",
-      "beneficio": "Hidrata intensamente con ácido hialurónico de absorción inmediata sin sensación pesada.",
-      "cuando": "Mañana y noche",
-      "precio": 14990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "beneficio": "Suaviza la apariencia de arrugas y ayuda a mejorar el tono irregular.",
+      "cuando": "Por la noche, antes de la crema; introducir gradualmente según tolerancia. Fotoprotección de día.",
+      "precio": 44699,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw0fc73483/images/products/87901/87901.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "104530",
+      "sku": "90165",
       "modulo": "Dermocosmetica",
       "paso": "Hidratante",
-      "presupuesto": "Esencial",
-      "marca": "Neutrogena",
-      "nombre": "Hydro Boost Water Gel 50 g",
-      "url": "https://www.farmaciasahumada.cl/producto-104530.html",
+      "presupuesto": "Medio",
+      "marca": "La Roche Posay",
+      "nombre": "Crema La Roche Posay Hidratante Toleriane Dermallergo Fluido 40 mL",
+      "url": "https://www.farmaciasahumada.cl/crema-la-roche-posay-hidratante-toleriane-dermallergo-fluido-40-ml-90165.html",
       "pieles": [
-        "Grasa",
-        "Mixta",
-        "Normal"
-      ],
-      "necesidades": [
-        "Brillo",
-        "Deshidratación",
-        "Nada en particular"
-      ],
-      "textura": "Ligero",
-      "beneficio": "Gel de agua ultraligero libre de aceites que hidrata por 48 horas sin tapar poros.",
-      "cuando": "Mañana y noche",
-      "precio": 13990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "104535",
-      "modulo": "Dermocosmetica",
-      "paso": "Hidratante",
-      "presupuesto": "Esencial",
-      "marca": "CeraVe",
-      "nombre": "Loción Hidratante de Rostro PM 52 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-104535.html",
-      "pieles": [
-        "Seca",
         "Sensible",
+        "Mixta",
+        "Grasa"
+      ],
+      "necesidades": [
+        "Irritación",
+        "Deshidratación",
+        "Tirantez"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidrata y calma molestias de la piel sensible con una textura fluida.",
+      "cuando": "Mañana y/o noche, después de la limpieza.",
+      "precio": 27599,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw48f71c6e/images/products/90165/90165.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "90167",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "La Roche Posay",
+      "nombre": "Crema La Roche Posay Hidratante Toleriane Dermallergo 40 mL",
+      "url": "https://www.farmaciasahumada.cl/crema-la-roche-posay-hidratante-toleriane-dermallergo-40-ml-90167.html",
+      "pieles": [
+        "Sensible",
+        "Seca",
         "Normal"
       ],
       "necesidades": [
-        "Tirantez",
+        "Irritación",
         "Resequedad",
-        "Afeitado",
+        "Tirantez",
+        "Deshidratación"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Hidrata y aporta confort a la piel sensible con necesidad de nutrición.",
+      "cuando": "Mañana y/o noche, después de la limpieza.",
+      "precio": 27599,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwebf05eda/images/products/90167/90167.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "85016",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "La Roche Posay",
+      "nombre": "Crema La Roche Posay Toleriane Sensitive 40 mL",
+      "url": "https://www.farmaciasahumada.cl/crema-la-roche-posay-toleriane-sensitive-40-ml-85016.html",
+      "pieles": [
+        "Sensible",
+        "Seca",
+        "Normal"
+      ],
+      "necesidades": [
+        "Deshidratación",
+        "Tirantez",
         "Irritación"
       ],
       "textura": "Cremoso",
-      "beneficio": "Calma y repara la barrera de la piel con niacinamida y ceramidas; ideal post-afeitado.",
-      "cuando": "Mañana y noche",
-      "precio": 14990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "beneficio": "Hidrata, alivia la tirantez y ayuda a mantener la barrera de la piel sensible.",
+      "cuando": "Mañana y noche, sobre rostro y cuello limpios.",
+      "precio": 28379,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw9ec91418/images/products/85016/85016.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "109201",
+      "sku": "91276",
       "modulo": "Dermocosmetica",
-      "paso": "Protector Solar",
+      "paso": "Hidratante",
       "presupuesto": "Esencial",
-      "marca": "Nivea Sun",
-      "nombre": "Protector Solar Facial Control Brillo FPS 50 50 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-109201.html",
+      "marca": "La Roche Posay",
+      "nombre": "Bálsamo La Roche Posay Multi Reparador Cicaplast Baume B5+ 40 mL",
+      "url": "https://www.farmaciasahumada.cl/balsamo-la-roche-posay-multi-reparador-cicaplast-baume-b5--40-ml-91276.html",
+      "pieles": [
+        "Sensible",
+        "Seca",
+        "Normal"
+      ],
+      "necesidades": [
+        "Irritación",
+        "Resequedad",
+        "Tirantez"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Bálsamo que calma zonas secas o irritadas y ayuda a reparar la barrera cutánea.",
+      "cuando": "Sobre piel limpia y seca, en zonas que lo necesiten. No aplicar sobre heridas abiertas.",
+      "precio": 12539,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw924f64c5/images/products/91276/91276.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "92436",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "La Roche Posay",
+      "nombre": "Crema La Roche Posay Anti Imperfecciones Effaclar Duo+M 40 mL",
+      "url": "https://www.farmaciasahumada.cl/crema-la-roche-posay-anti-imperfecciones-effaclar-duo-m-40-ml-92436.html",
       "pieles": [
         "Grasa",
-        "Mixta",
-        "Normal"
+        "Mixta"
       ],
       "necesidades": [
-        "Brillo",
+        "Acné",
+        "Poros",
         "Manchas",
-        "Nada en particular"
+        "Brillo"
       ],
       "textura": "Ligero",
-      "beneficio": "Protección solar diaria de efecto matificante inmediato y cero sensación grasosa.",
-      "cuando": "Todas las mañanas",
-      "precio": 11990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "beneficio": "Cuidado antiimperfecciones que ayuda a reducir granos, puntos negros y marcas.",
+      "cuando": "Mañana y/o noche sobre piel limpia; complementar con fotoprotección durante el día.",
+      "precio": 29109,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw8208bbb1/images/products/92436/92436.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "109205",
+      "sku": "93071",
       "modulo": "Dermocosmetica",
-      "paso": "Protector Solar",
-      "presupuesto": "Esencial",
-      "marca": "CeraVe",
-      "nombre": "Loción Hidratante de Rostro AM FPS 50 52 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-109205.html",
+      "paso": "Serum",
+      "presupuesto": "Premium",
+      "marca": "La Roche Posay",
+      "nombre": "Serum La Roche Posay Mela B3 Anti Manchas 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-la-roche-posay-mela-b3-anti-manchas-30-ml-93071.html",
       "pieles": [
-        "Seca",
-        "Sensible",
-        "Normal"
+        "Normal",
+        "Mixta",
+        "Sensible"
       ],
       "necesidades": [
-        "Tirantez",
-        "Resequedad",
-        "Afeitado",
         "Manchas"
       ],
-      "textura": "Cremoso",
-      "beneficio": "Hidratante y protector solar 2 en 1 que protege contra rayos UV mientras calma la piel.",
-      "cuando": "Todas las mañanas",
-      "precio": 15990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "201101",
-      "modulo": "Dermocosmetica",
-      "paso": "Limpiador",
-      "presupuesto": "Medio",
-      "marca": "La Roche-Posay",
-      "nombre": "Effaclar Gel Purificante Micro-Exfoliante 200 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-201101.html",
-      "pieles": [
-        "Grasa",
-        "Mixta"
-      ],
-      "necesidades": [
-        "Brillo",
-        "Acné",
-        "Poros"
-      ],
       "textura": "Ligero",
-      "beneficio": "Desobstruye poros y regula el exceso de sebo gracias al ácido salicílico y LHA.",
-      "cuando": "Mañana y noche",
-      "precio": 19990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "beneficio": "Ayuda a atenuar manchas y mejorar la uniformidad del tono.",
+      "cuando": "Mañana y/o noche, antes de la crema; finalizar con protector solar de día.",
+      "precio": 43999,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw6805236d/images/products/93071/93071.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "201105",
-      "modulo": "Dermocosmetica",
-      "paso": "Limpiador",
-      "presupuesto": "Medio",
-      "marca": "Bioderma",
-      "nombre": "Sensibio Gel Moussant 200 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-201105.html",
-      "pieles": [
-        "Sensible",
-        "Seca",
-        "Normal"
-      ],
-      "necesidades": [
-        "Tirantez",
-        "Irritación",
-        "Afeitado",
-        "Resequedad"
-      ],
-      "textura": "Ligero",
-      "beneficio": "Limpiador micelar ultra suave sin jabón ni perfume que calma la irritación al instante.",
-      "cuando": "Mañana y noche",
-      "precio": 18990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "202210",
-      "modulo": "Dermocosmetica",
-      "paso": "Serum",
-      "presupuesto": "Medio",
-      "marca": "Eucerin",
-      "nombre": "DermoPure Oil Control Sérum Triple Efecto 40 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-202210.html",
-      "pieles": [
-        "Grasa",
-        "Mixta"
-      ],
-      "necesidades": [
-        "Acné",
-        "Manchas",
-        "Brillo",
-        "Poros"
-      ],
-      "textura": "Ligero",
-      "beneficio": "Reduce marcas post-acné con Thiamidol patentado y controla el brillo durante el día.",
-      "cuando": "Mañana y noche",
-      "precio": 24990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "202215",
-      "modulo": "Dermocosmetica",
-      "paso": "Serum",
-      "presupuesto": "Medio",
-      "marca": "Bioderma",
-      "nombre": "Hydrabio Sérum Concentrado Hidratante 40 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-202215.html",
-      "pieles": [
-        "Seca",
-        "Sensible",
-        "Normal"
-      ],
-      "necesidades": [
-        "Tirantez",
-        "Resequedad",
-        "Deshidratación"
-      ],
-      "textura": "Ligero",
-      "beneficio": "Reactiva la hidratación natural de la piel devolviendo luminosidad y confort inmediato.",
-      "cuando": "Mañana y noche",
-      "precio": 23990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "203310",
-      "modulo": "Dermocosmetica",
-      "paso": "Hidratante",
-      "presupuesto": "Medio",
-      "marca": "La Roche-Posay",
-      "nombre": "Effaclar Mat Hidratante Seborregulador 40 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-203310.html",
-      "pieles": [
-        "Grasa",
-        "Mixta"
-      ],
-      "necesidades": [
-        "Brillo",
-        "Poros",
-        "Acné"
-      ],
-      "textura": "Ligero",
-      "beneficio": "Hidrata y matifica de forma duradera reduciendo el tamaño visible de los poros.",
-      "cuando": "Mañana y noche",
-      "precio": 22990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "203318",
-      "modulo": "Dermocosmetica",
-      "paso": "Hidratante",
-      "presupuesto": "Medio",
-      "marca": "La Roche-Posay",
-      "nombre": "Cicaplast Baume B5+ Bálsamo Reparador 40 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-203318.html",
-      "pieles": [
-        "Seca",
-        "Sensible",
-        "Normal"
-      ],
-      "necesidades": [
-        "Afeitado",
-        "Irritación",
-        "Tirantez",
-        "Resequedad"
-      ],
-      "textura": "Cremoso",
-      "beneficio": "Bálsamo calmante y reparador con pantenol al 5% y madecasoside; alivia rojeces al instante.",
-      "cuando": "Noche o post-afeitado",
-      "precio": 18990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "301101",
-      "modulo": "Dermocosmetica",
-      "paso": "Limpiador",
-      "presupuesto": "Premium",
-      "marca": "La Roche-Posay",
-      "nombre": "Toleriane Dermo-Limpiador Fluido 200 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-301101.html",
-      "pieles": [
-        "Sensible",
-        "Seca",
-        "Normal"
-      ],
-      "necesidades": [
-        "Irritación",
-        "Tirantez",
-        "Afeitado",
-        "Resequedad"
-      ],
-      "textura": "Cremoso",
-      "beneficio": "Fórmula minimalista sin tensioactivos agresivos para pieles intolerantes o reactivas.",
-      "cuando": "Mañana y noche",
-      "precio": 28990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "302201",
+      "sku": "96383",
       "modulo": "Dermocosmetica",
       "paso": "Serum",
       "presupuesto": "Premium",
-      "marca": "Vichy",
-      "nombre": "Minéral 89 Booster Fortificante e Hidratante 50 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-302201.html",
+      "marca": "La Roche-Posay",
+      "nombre": "Serum La Roche Posay Hyalu B5 Supractivado 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-la-roche-posay-hyalu-b5-supractivado-30-ml-96383.html",
       "pieles": [
-        "Grasa",
-        "Mixta",
+        "Seca",
+        "Normal",
         "Sensible"
       ],
       "necesidades": [
         "Deshidratación",
-        "Afeitado",
-        "Tirantez",
+        "Arrugas",
+        "Tirantez"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidrata y ayuda a suavizar la apariencia de líneas y arrugas.",
+      "cuando": "Mañana y noche, antes de la hidratante; protector solar de día.",
+      "precio": 45089,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw339b5d0f/images/products/96383/96383.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "85388",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Medio",
+      "marca": "CeraVe",
+      "nombre": "Gel Limpieza Cerave Espumoso 473 mL",
+      "url": "https://www.farmaciasahumada.cl/gel-limpieza-cerave-espumoso-473-ml-85388.html",
+      "pieles": [
+        "Normal",
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Brillo",
         "Nada en particular"
       ],
       "textura": "Ligero",
-      "beneficio": "89% de Agua Volcánica de Vichy + ácido hialurónico puro para fortalecer la barrera cutánea.",
-      "cuando": "Mañana y noche",
-      "precio": 31990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "beneficio": "Limpia el exceso de grasa e impurezas sin descuidar la barrera cutánea.",
+      "cuando": "Mañana y noche; masajear sobre piel húmeda y enjuagar.",
+      "precio": 20069,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw12cd04bb/images/products/85388/85388.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "302209",
+      "sku": "85390",
       "modulo": "Dermocosmetica",
-      "paso": "Serum",
-      "presupuesto": "Premium",
-      "marca": "La Roche-Posay",
-      "nombre": "Hyalu B5 Sérum Anti-Arrugas Reparador 30 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-302209.html",
+      "paso": "Limpiador",
+      "presupuesto": "Medio",
+      "marca": "CeraVe",
+      "nombre": "Limpiador Cerave Hidratante 473 mL",
+      "url": "https://www.farmaciasahumada.cl/limpiador-cerave-hidratante-473-ml-85390.html",
       "pieles": [
         "Seca",
         "Normal",
         "Sensible"
       ],
       "necesidades": [
-        "Arrugas",
-        "Tirantez",
         "Resequedad",
+        "Tirantez",
+        "Deshidratación",
+        "Nada en particular"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Limpia suavemente la piel normal a seca y ayuda a conservar su hidratación.",
+      "cuando": "Mañana y noche; aplicar sobre piel húmeda y enjuagar suavemente.",
+      "precio": 20069,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwff64a2b4/images/products/85390/85390.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "90195",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Esencial",
+      "marca": "CeraVe",
+      "nombre": "Limpiador Cerave Aceite Espumoso Hidratante 473 mL",
+      "url": "https://www.farmaciasahumada.cl/limpiador-cerave-aceite-espumoso-hidratante-473-ml-90195.html",
+      "pieles": [
+        "Seca",
+        "Normal",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Resequedad",
+        "Tirantez",
         "Deshidratación"
       ],
       "textura": "Ligero",
-      "beneficio": "Rellena líneas finas y repara elasticidad con doble ácido hialurónico y vitamina B5.",
-      "cuando": "Mañana y noche",
-      "precio": 38990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "beneficio": "Limpia con una fórmula en aceite espumoso que respeta la hidratación de la piel.",
+      "cuando": "Mañana y/o noche; masajear sobre piel húmeda y enjuagar.",
+      "precio": 18949,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwc3ad6cd0/images/products/90195/90195.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "303305",
+      "sku": "91606",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Esencial",
+      "marca": "CeraVe",
+      "nombre": "Limpiador Cerave Control Imperfecciones 236 mL",
+      "url": "https://www.farmaciasahumada.cl/limpiador-cerave-control-imperfecciones-236-ml-91606.html",
+      "pieles": [
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Acné",
+        "Poros",
+        "Brillo"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Limpia piel con tendencia acneica y ayuda a reducir exceso de grasa y poros obstruidos.",
+      "cuando": "Mañana y/o noche, según tolerancia; enjuagar. Complementar con fotoprotección de día.",
+      "precio": 16649,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwc1a322b8/images/products/91606/91606.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "91607",
       "modulo": "Dermocosmetica",
       "paso": "Hidratante",
-      "presupuesto": "Premium",
-      "marca": "Avène",
-      "nombre": "Hyaluron Activ B3 Crema Regeneradora Celular 50 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-303305.html",
+      "presupuesto": "Esencial",
+      "marca": "CeraVe",
+      "nombre": "Gel Cerave Control Imperfecciones 40 mL",
+      "url": "https://www.farmaciasahumada.cl/gel-cerave-control-imperfecciones-40-ml-91607.html",
+      "pieles": [
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Acné",
+        "Poros"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Gel de tratamiento hidratante y exfoliante que ayuda a reducir imperfecciones y puntos negros.",
+      "cuando": "Preferentemente de noche; comenzar con aplicaciones espaciadas según tolerancia. Protector solar de día.",
+      "precio": 17607,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwc14ce207/images/products/91607/91607.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "85413",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Esencial",
+      "marca": "CeraVe",
+      "nombre": "Loción Cerave Facial Hidratante 52 mL",
+      "url": "https://www.farmaciasahumada.cl/locion-cerave-facial-hidratante-52-ml-85413.html",
+      "pieles": [
+        "Normal",
+        "Seca",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Deshidratación",
+        "Resequedad",
+        "Tirantez"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Loción facial nocturna que hidrata y ayuda a mantener la barrera cutánea.",
+      "cuando": "Por la noche, tras limpiar el rostro y aplicar el sérum si corresponde.",
+      "precio": 18249,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwb312e586/images/products/85413/85413.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "93710",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Esencial",
+      "marca": "CeraVe",
+      "nombre": "Crema Facial Cerave Oil Control 52 mL",
+      "url": "https://www.farmaciasahumada.cl/crema-facial-cerave-oil-control-52-ml-93710.html",
+      "pieles": [
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Deshidratación",
+        "Matte"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidrata la piel mixta a grasa y ayuda a controlar el brillo con acabado mate.",
+      "cuando": "Mañana y noche; durante el día, completar con protector solar.",
+      "precio": 18759,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw38b7932e/images/products/93710/93710.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "92281",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Esencial",
+      "marca": "CeraVe",
+      "nombre": "Serum Cerave Retinol Antimarca 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-cerave-retinol-antimarca-30-ml-92281.html",
+      "pieles": [
+        "Grasa",
+        "Mixta",
+        "Normal"
+      ],
+      "necesidades": [
+        "Manchas",
+        "Poros"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Ayuda a suavizar la textura y la apariencia de marcas posteriores a imperfecciones.",
+      "cuando": "Por la noche; introducir gradualmente según tolerancia. Usar protector solar de día.",
+      "precio": 19055,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwdd539ab3/images/products/92281/92281.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "92707",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Esencial",
+      "marca": "CeraVe",
+      "nombre": "Serum Cerave Hidratante Ácido Hialurónico 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-cerave-hidratante-acido-hialuronico-30-ml-92707.html",
       "pieles": [
         "Seca",
         "Normal",
         "Sensible"
       ],
       "necesidades": [
-        "Arrugas",
+        "Deshidratación",
         "Tirantez",
         "Resequedad"
       ],
-      "textura": "Cremoso",
-      "beneficio": "Concentrado con niacinamida al 6% y ácido hialurónico para firmeza y luminosidad profunda.",
-      "cuando": "Mañana y noche",
-      "precio": 36990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "textura": "Ligero",
+      "beneficio": "Aporta hidratación y ayuda a mantener la barrera cutánea en piel normal a seca.",
+      "cuando": "Mañana y/o noche sobre piel limpia, antes de la crema hidratante.",
+      "precio": 16399,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwf715a1cc/images/products/92707/92707.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "304402",
+      "sku": "86727",
       "modulo": "Dermocosmetica",
-      "paso": "Protector Solar",
+      "paso": "Serum",
       "presupuesto": "Premium",
-      "marca": "La Roche-Posay",
-      "nombre": "Anthelios UVMune 400 Fluido Invisible FPS 50+ 50 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-304402.html",
+      "marca": "Eucerin",
+      "nombre": "Serum Eucerin Dual Antipigment 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-eucerin-dual-antipigment-30-ml-86727.html",
       "pieles": [
+        "Normal",
+        "Seca",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Manchas",
+        "Deshidratación"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Ayuda a disminuir manchas oscuras y aporta hidratación para un tono más uniforme.",
+      "cuando": "Mañana y noche, antes de la crema; máximo cuatro aplicaciones diarias de productos con Thiamidol en total.",
+      "precio": 47189,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw47497bd9/images/products/86727/86727.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "90889",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Premium",
+      "marca": "Eucerin",
+      "nombre": "Serum Eucerin Anti Manchas Ultra Light 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-eucerin-anti-manchas-ultra-light-30-ml-90889.html",
+      "pieles": [
+        "Mixta",
         "Grasa",
+        "Normal"
+      ],
+      "necesidades": [
+        "Manchas"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Ayuda a reducir manchas con una textura ultraligera de rápida absorción.",
+      "cuando": "Mañana y/o noche; máximo cuatro aplicaciones diarias de productos con Thiamidol en total. Protector solar de día.",
+      "precio": 48019,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwdd305d01/images/products/90889/90889.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "86728",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Premium",
+      "marca": "Eucerin",
+      "nombre": "Crema Eucerin Antipigment Noche 50 mL",
+      "url": "https://www.farmaciasahumada.cl/crema-eucerin-antipigment-noche-50-ml-86728.html",
+      "pieles": [
+        "Normal",
+        "Seca",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Manchas"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Crema nocturna que ayuda a atenuar manchas y favorece el confort de la piel.",
+      "cuando": "Una vez por la noche; máximo cuatro aplicaciones diarias de productos con Thiamidol en total.",
+      "precio": 41569,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw453841ed/images/products/86728/86728.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "78650",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "Eucerin",
+      "nombre": "Crema Eucerin Ultra Sensitive Facial 50 mL",
+      "url": "https://www.farmaciasahumada.cl/crema-eucerin-ultra-sensitive-facial-50-ml-78650.html",
+      "pieles": [
+        "Sensible",
+        "Normal",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Irritación",
+        "Tirantez",
+        "Deshidratación"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidrata y calma la sensación de incomodidad de la piel sensible con textura fluida.",
+      "cuando": "Mañana y noche, después de la limpieza.",
+      "precio": 28989,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw9d112643/images/products/78650/78650.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "91954",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Esencial",
+      "marca": "Eucerin",
+      "nombre": "Gel Limpiador Facial Dermatoclean Piel Normal/Mixta 200 mL",
+      "url": "https://www.farmaciasahumada.cl/gel-limpiador-facial-dermatoclean-piel-normal-mixta-200-ml-91954.html",
+      "pieles": [
+        "Normal",
         "Mixta",
         "Sensible"
       ],
       "necesidades": [
-        "Manchas",
-        "Brillo",
-        "Arrugas",
-        "Nada en particular"
+        "Nada en particular",
+        "Brillo"
       ],
       "textura": "Ligero",
-      "beneficio": "Máxima protección frente a rayos UVA ultra-largos con textura fluida invisible ultra resistente.",
-      "cuando": "Todas las mañanas",
-      "precio": 29990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "beneficio": "Elimina impurezas y maquillaje ligero con una limpieza suave.",
+      "cuando": "Mañana y noche; aplicar sobre piel húmeda y enjuagar.",
+      "precio": 19459,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw376a63d3/images/products/91954/91954.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "401101",
-      "modulo": "Belleza",
-      "paso": "Prebase / Primer",
-      "presupuesto": "Medio",
-      "marca": "NYX Professional Makeup",
-      "nombre": "The Marshmellow Primer Suavizante 30 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-401101.html",
+      "sku": "93545",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Premium",
+      "marca": "Eucerin",
+      "nombre": "Serum Eucerin Hyaluron Filler Epigenetic 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-eucerin-hyaluron-filler-epigenetic-30-ml-93545.html",
       "pieles": [
-        "Grasa",
-        "Mixta",
-        "Seca"
-      ],
-      "necesidades": [
-        "Poros",
-        "Luminoso",
-        "Natural"
-      ],
-      "textura": "Ligero",
-      "beneficio": "Suaviza textura, prolonga el maquillaje hasta 16 horas y unifica sin sensación pesada.",
-      "cuando": "Antes de la base",
-      "precio": 15990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
-    },
-    {
-      "sku": "402201",
-      "modulo": "Belleza",
-      "paso": "Base / Tinte",
-      "presupuesto": "Medio",
-      "marca": "L'Oréal Paris",
-      "nombre": "True Match Sérum con Color 1% Ácido Hialurónico 30 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-402201.html",
-      "pieles": [
+        "Normal",
         "Seca",
-        "Mixta",
-        "Normal"
+        "Mixta"
       ],
       "necesidades": [
-        "Natural",
-        "Luminoso",
-        "Cobertura media"
+        "Arrugas",
+        "Deshidratación"
       ],
       "textura": "Ligero",
-      "beneficio": "Unifica el tono como un maquillaje mientras hidrata como un sérum con acabado piel real.",
-      "cuando": "Uso diario",
-      "precio": 16990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "beneficio": "Ayuda a mejorar la apariencia de arrugas y aporta hidratación.",
+      "cuando": "Mañana y noche antes de la hidratante; complementar con protector solar de día.",
+      "precio": 41990,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw8dbdd353/images/products/93545/93545.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "403301",
-      "modulo": "Belleza",
-      "paso": "Corrector",
-      "presupuesto": "Esencial",
-      "marca": "Maybelline",
-      "nombre": "Instant Age Rewind Eraser Corrector 6 ml",
-      "url": "https://www.farmaciasahumada.cl/producto-403301.html",
+      "sku": "96688",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "Eucerin",
+      "nombre": "Eucerin Face Dermopure Fluido Matificante 40Ml",
+      "url": "https://www.farmaciasahumada.cl/eucerin-face-dermopure-fluido-matificante-40ml-96688.html",
       "pieles": [
         "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Acné",
+        "Matte"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Ayuda a controlar el exceso de brillo y deja un acabado mate en piel grasa.",
+      "cuando": "Mañana y noche sobre piel limpia; finalizar con protector solar durante el día.",
+      "precio": 25249,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw6f212201/images/products/96688/96688.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "89437",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Medio",
+      "marca": "Isdinceutics",
+      "nombre": "Serum Isdinceutics Hyaluronic Concentrate 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-isdinceutics-hyaluronic-concentrate-30-ml-89437.html",
+      "pieles": [
+        "Normal",
         "Mixta",
         "Seca"
       ],
       "necesidades": [
-        "Natural",
-        "Luminoso",
-        "Cobertura media"
+        "Deshidratación",
+        "Arrugas",
+        "Poros"
       ],
       "textura": "Ligero",
-      "beneficio": "Cubre ojeras e imperfecciones sin marcar líneas de expresión gracias a su aplicador esponja.",
-      "cuando": "Después de la base",
-      "precio": 9990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "beneficio": "Hidrata, ayuda a suavizar líneas finas y mejora la apariencia de los poros.",
+      "cuando": "Mañana y noche, antes de la crema; protector solar durante el día.",
+      "precio": 30519,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwbf6ea9a8/images/products/89437/89437.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     },
     {
-      "sku": "404401",
-      "modulo": "Belleza",
-      "paso": "Fijación / Acabado",
-      "presupuesto": "Esencial",
-      "marca": "Essence",
-      "nombre": "All About Matt! Polvo Compacto Fijador 8 g",
-      "url": "https://www.farmaciasahumada.cl/producto-404401.html",
+      "sku": "91923",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "Isdinceutics",
+      "nombre": "ISDINCEUTICS Hyaluronic Moisture Sensitive Skin 50 gr",
+      "url": "https://www.farmaciasahumada.cl/isdinceutics-hyaluronic-moisture-sensitive-skin-50-gr-91923.html",
       "pieles": [
-        "Grasa",
-        "Mixta",
-        "Normal"
+        "Sensible"
       ],
       "necesidades": [
+        "Deshidratación",
+        "Tirantez",
+        "Irritación"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Hidrata y proporciona confort a la piel sensible, ayudando a mantener su barrera.",
+      "cuando": "Mañana y/o noche tras la limpieza y el sérum si corresponde.",
+      "precio": 31631,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw86162bca/images/products/91923/91923.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "91924",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Premium",
+      "marca": "Isdinceutics",
+      "nombre": "ISDINCEUTICS Hyaluronic Moisture Normal to Dry Skin 50 gr",
+      "url": "https://www.farmaciasahumada.cl/isdinceutics-hyaluronic-moisture-normal-to-dry-skin-50-gr-91924.html",
+      "pieles": [
+        "Normal",
+        "Seca"
+      ],
+      "necesidades": [
+        "Resequedad",
+        "Deshidratación",
+        "Tirantez"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Hidrata y nutre la piel normal a seca, ayudando a recuperar su confort.",
+      "cuando": "Mañana y noche, después de la limpieza y el sérum si corresponde.",
+      "precio": 40229,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw51aa59be/images/products/91924/91924.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "93362",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Premium",
+      "marca": "Isdinceutics",
+      "nombre": "Crema Isdinceutics Hyaluronic Moisture Oily Skin 50 g",
+      "url": "https://www.farmaciasahumada.cl/crema-isdinceutics-hyaluronic-moisture-oily-skin-50-g-93362.html",
+      "pieles": [
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Deshidratación",
         "Brillo",
         "Matte"
       ],
       "textura": "Ligero",
-      "beneficio": "Sella el maquillaje de forma translúcida y controla el brillo en la zona T todo el día.",
-      "cuando": "Paso final",
-      "precio": 4990,
-      "imagen": "",
-      "fuente": "respaldo_excel"
+      "beneficio": "Hidrata la piel grasa o mixta con una textura ligera y acabado matificante.",
+      "cuando": "Mañana y/o noche; terminar con protector solar durante el día.",
+      "precio": 38749,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwff8d7171/images/products/93362/93362.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "91783",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Medio",
+      "marca": "ISDIN",
+      "nombre": "Limpiador Gel Isdin Acniben Matificante 400 mL",
+      "url": "https://www.farmaciasahumada.cl/limpiador-gel-isdin-acniben-matificante-400-ml-91783.html",
+      "pieles": [
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Acné",
+        "Poros"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Limpia impurezas y ayuda a reducir el exceso de grasa en piel con tendencia acneica.",
+      "cuando": "Mañana y/o noche; masajear sobre piel húmeda y enjuagar.",
+      "precio": 24689,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw34c3a8ce/images/products/91783/91783.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "85654",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Medio",
+      "marca": "Avene",
+      "nombre": "Gel Avene Limpieza Cleanance 400 mL",
+      "url": "https://www.farmaciasahumada.cl/gel-avene-limpieza-cleanance-400-ml-85654.html",
+      "pieles": [
+        "Grasa",
+        "Mixta",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Acné"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Limpia suavemente y ayuda a reducir el exceso de grasa de la piel con imperfecciones.",
+      "cuando": "Mañana y noche; masajear sobre piel húmeda y enjuagar.",
+      "precio": 25119,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw1f02228a/images/products/85654/85654.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "89867",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "Avene",
+      "nombre": "Crema Avene Tolerance Control 40mL",
+      "url": "https://www.farmaciasahumada.cl/crema-avene-tolerance-control-40ml-89867.html",
+      "pieles": [
+        "Sensible",
+        "Normal",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Irritación",
+        "Tirantez",
+        "Deshidratación"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Hidrata y calma la sensación de malestar de la piel sensible o reactiva.",
+      "cuando": "Mañana y noche sobre rostro y cuello limpios.",
+      "precio": 26769,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwd7bcb959/images/products/89867/89867.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "89869",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "Avene",
+      "nombre": "Avene Tolerance Control Balsamo 40ml",
+      "url": "https://www.farmaciasahumada.cl/avene-tolerance-control-balsamo-40ml-89869.html",
+      "pieles": [
+        "Seca",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Resequedad",
+        "Irritación",
+        "Tirantez"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Bálsamo nutritivo que aporta confort y calma la piel seca y sensible.",
+      "cuando": "Mañana y noche sobre rostro y cuello limpios.",
+      "precio": 27029,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw0620d788/images/products/89869/89869.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "91617",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Medio",
+      "marca": "Avene",
+      "nombre": "Serum Avene Hyaluron Activ B3 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-avene-hyaluron-activ-b3-30-ml-91617.html",
+      "pieles": [
+        "Normal",
+        "Seca",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Arrugas",
+        "Deshidratación"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Aporta hidratación y ayuda a suavizar la apariencia de arrugas.",
+      "cuando": "Mañana y/o noche antes de la crema hidratante.",
+      "precio": 31108,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw7379421c/images/products/91617/91617.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "93134",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "Avene",
+      "nombre": "Crema Avene Rosamed Anti-Rojeces 30Ml",
+      "url": "https://www.farmaciasahumada.cl/crema-avene-rosamed-anti-rojeces-30ml-93134.html",
+      "pieles": [
+        "Sensible"
+      ],
+      "necesidades": [
+        "Irritación",
+        "Deshidratación",
+        "Tirantez"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Ayuda a disminuir la apariencia de rojeces y la sensación de incomodidad.",
+      "cuando": "Mañana y noche después de la limpieza suave.",
+      "precio": 34299,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwb70022d7/images/products/93134/93134.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "46716",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Premium",
+      "marca": "Cetaphil",
+      "nombre": "Loción Limpiadora Cetaphil Facial Pieles Sensibles 473 mL",
+      "url": "https://www.farmaciasahumada.cl/locion-limpiadora-cetaphil-facial-pieles-sensibles-473-ml-46716.html",
+      "pieles": [
+        "Seca",
+        "Normal",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Resequedad",
+        "Tirantez",
+        "Nada en particular"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Limpia de forma suave la piel normal a seca sin dejar sensación de resequedad.",
+      "cuando": "Mañana y/o noche; con agua, enjuagar, o sin agua, retirar el exceso según el envase.",
+      "precio": 37409,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwa30c7796/images/products/46716/46716.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "91022",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "Cetaphil",
+      "nombre": "Crema Cetaphil Pro Ar Calm Conrol Hidratante Facial 50 mL",
+      "url": "https://www.farmaciasahumada.cl/crema-cetaphil-pro-ar-calm-conrol-hidratante-facial-50-ml-91022.html",
+      "pieles": [
+        "Sensible"
+      ],
+      "necesidades": [
+        "Irritación",
+        "Deshidratación",
+        "Tirantez"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidrata y calma la piel sensible con tendencia al enrojecimiento.",
+      "cuando": "Mañana y noche después de la limpieza; protector solar durante el día.",
+      "precio": 29809,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw46740c66/images/products/91022/91022.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "91278",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Medio",
+      "marca": "Cetaphil",
+      "nombre": "Espuma Limpiadora Cetaphil Facial PRO AR Control 236 mL",
+      "url": "https://www.farmaciasahumada.cl/espuma-limpiadora-cetaphil-facial-pro-ar-control-236-ml-91278.html",
+      "pieles": [
+        "Sensible"
+      ],
+      "necesidades": [
+        "Irritación",
+        "Tirantez",
+        "Nada en particular"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Espuma de limpieza suave para piel sensible con tendencia al enrojecimiento.",
+      "cuando": "Mañana y noche sobre piel húmeda; masajear suavemente y enjuagar.",
+      "precio": 28789,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwf6825987/images/products/91278/91278.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "93336",
+      "modulo": "Dermocosmetica",
+      "paso": "Protector Solar",
+      "presupuesto": "Medio",
+      "marca": "Vichy",
+      "nombre": "Minéral 89 UV Fluid FPS 50+ 50ml",
+      "url": "https://www.farmaciasahumada.cl/mineral-89-uv-fluid-fps-50--50ml-93336.html",
+      "pieles": [
+        "Normal",
+        "Seca",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Deshidratación",
+        "Nada en particular"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Fluido hidratante con protección solar FPS 50+ para completar la rutina de día.",
+      "cuando": "Por la mañana antes de la exposición solar; reaplicar con frecuencia y tras sudar o secarse.",
+      "precio": 27031,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw05db28d4/images/products/93336/93336.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "75459",
+      "modulo": "Dermocosmetica",
+      "paso": "Protector Solar",
+      "presupuesto": "Medio",
+      "marca": "Cetaphil",
+      "nombre": "Crema Hidratante Facial con FPS 50 Cetaphil 50ml",
+      "url": "https://www.farmaciasahumada.cl/crema-hidratante-facial-con-fps-50-cetaphil-50ml-75459.html",
+      "pieles": [
+        "Normal",
+        "Seca",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Resequedad",
+        "Deshidratación",
+        "Nada en particular"
+      ],
+      "textura": "Cremoso",
+      "beneficio": "Hidrata y aporta protección solar FPS 50 a la piel normal a seca.",
+      "cuando": "Por la mañana; reaplicar cada dos horas durante la exposición solar y después de sudar o secarse.",
+      "precio": 26619,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw224613b3/images/products/75459/75459.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "91279",
+      "modulo": "Dermocosmetica",
+      "paso": "Protector Solar",
+      "presupuesto": "Medio",
+      "marca": "Cetaphil",
+      "nombre": "Crema Hidratante Facial FPS 30 con Color Cetaphil PRO AR 50mL",
+      "url": "https://www.farmaciasahumada.cl/crema-hidratante-facial-fps-30-con-color-cetaphil-pro-ar-50ml-91279.html",
+      "pieles": [
+        "Sensible"
+      ],
+      "necesidades": [
+        "Irritación",
+        "Deshidratación",
+        "Natural"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidratante con color y FPS 30 que ayuda a unificar visualmente el tono y disimular rojeces.",
+      "cuando": "Por la mañana; reaplicar cada dos horas con exposición solar y después de sudar o secarse.",
+      "precio": 29069,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw845df8c3/images/products/91279/91279.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "90911",
+      "modulo": "Dermocosmetica",
+      "paso": "Limpiador",
+      "presupuesto": "Medio",
+      "marca": "Uriage",
+      "nombre": "Gel Limpiador Purificante Hyséac 500ml Uriage",
+      "url": "https://www.farmaciasahumada.cl/gel-limpiador-purificante-hyseac-500ml-uriage-90911.html",
+      "pieles": [
+        "Grasa",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Nada en particular"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Limpia impurezas y exceso de grasa respetando el confort de la piel.",
+      "cuando": "Mañana y noche sobre rostro húmedo; masajear y enjuagar.",
+      "precio": 27249,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwde861219/images/products/90911/90911.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "87532",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "Uriage",
+      "nombre": "Crema Matificante Hyséac MAT' 40ml Uriage",
+      "url": "https://www.farmaciasahumada.cl/crema-matificante-hyseac-mat-40ml-uriage-87532.html",
+      "pieles": [
+        "Mixta",
+        "Grasa"
+      ],
+      "necesidades": [
+        "Brillo",
+        "Poros",
+        "Deshidratación",
+        "Matte"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidrata y matifica, ayudando a mejorar la apariencia de los poros.",
+      "cuando": "Mañana y/o noche sobre piel limpia.",
+      "precio": 27229,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwfac8cdd7/images/products/87532/87532.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "89695",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "Uriage",
+      "nombre": "crema uriage tolederm light crema 40ml",
+      "url": "https://www.farmaciasahumada.cl/crema-uriage-tolederm-light-crema-40ml-89695.html",
+      "pieles": [
+        "Sensible",
+        "Normal",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Irritación",
+        "Deshidratación",
+        "Tirantez"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidrata y calma molestias de la piel sensible con una textura ligera.",
+      "cuando": "Mañana y noche después de la limpieza suave.",
+      "precio": 31529,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw91512ee3/images/products/89695/89695.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "89542",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Premium",
+      "marca": "Uriage",
+      "nombre": "Serum Uriage Bariéderm Cica Daily 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-uriage-bariederm-cica-daily-30-ml-89542.html",
+      "pieles": [
+        "Sensible",
+        "Normal",
+        "Mixta"
+      ],
+      "necesidades": [
+        "Deshidratación",
+        "Irritación",
+        "Tirantez"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidrata y ayuda a reforzar la barrera de la piel con sensación de incomodidad.",
+      "cuando": "Mañana y noche, antes de la crema hidratante.",
+      "precio": 42999,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwa11a33dc/images/products/89542/89542.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "83549",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Medio",
+      "marca": "Vichy",
+      "nombre": "Serum Vichy Mineral 89 Concen 50 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-vichy-mineral-89-concen-50-ml-83549.html",
+      "pieles": [
+        "Normal",
+        "Mixta",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Deshidratación",
+        "Tirantez",
+        "Nada en particular"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Aporta hidratación y ayuda a fortalecer la barrera cutánea con una textura ligera.",
+      "cuando": "Mañana y/o noche sobre piel limpia, antes de la crema.",
+      "precio": 34129,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw3297d2a9/images/products/83549/83549.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "93835",
+      "modulo": "Dermocosmetica",
+      "paso": "Hidratante",
+      "presupuesto": "Medio",
+      "marca": "Vichy",
+      "nombre": "Crema Vichy Minéral 89 Matte Sorbet 50 mL",
+      "url": "https://www.farmaciasahumada.cl/crema-vichy-mineral-89-matte-sorbet-50-ml-93835.html",
+      "pieles": [
+        "Mixta",
+        "Grasa",
+        "Sensible"
+      ],
+      "necesidades": [
+        "Deshidratación",
+        "Brillo",
+        "Matte"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Hidrata y aporta frescor con acabado mate en piel mixta a grasa.",
+      "cuando": "Mañana y noche después del sérum; protector solar durante el día.",
+      "precio": 32029,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw8ef28d69/images/products/93835/93835.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
+    },
+    {
+      "sku": "90446",
+      "modulo": "Dermocosmetica",
+      "paso": "Serum",
+      "presupuesto": "Premium",
+      "marca": "Vichy",
+      "nombre": "Serum Vichy Antimanchas Liftactiv B3 30 mL",
+      "url": "https://www.farmaciasahumada.cl/serum-vichy-antimanchas-liftactiv-b3-30-ml-90446.html",
+      "pieles": [
+        "Normal",
+        "Mixta",
+        "Seca"
+      ],
+      "necesidades": [
+        "Manchas",
+        "Arrugas"
+      ],
+      "textura": "Ligero",
+      "beneficio": "Ayuda a mejorar la apariencia de manchas y arrugas para un tono más uniforme.",
+      "cuando": "Mañana y/o noche antes de la crema; usar protector solar durante el día.",
+      "precio": 36167,
+      "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwbd675a72/images/products/90446/90446.jpg?sw=1050&sh=1050&sm=fit",
+      "fuente": "sfcc_en_vivo"
     }
   ]
 }
