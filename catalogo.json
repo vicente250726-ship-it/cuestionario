@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-11-24T03:49:31.945509+00:00",
+  "ultima_actualizacion": "2026-11-24T16:58:13.926755+00:00",
   "total_productos": 50,
   "productos": [
     {
@@ -632,7 +632,7 @@
       "textura": "Ligero",
       "beneficio": "Ayuda a mejorar la apariencia de arrugas y aporta hidratación.",
       "cuando": "Mañana y noche antes de la hidratante; complementar con protector solar de día.",
-      "precio": 41990,
+      "precio": 30799,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw8dbdd353/images/products/93545/93545.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -1062,7 +1062,7 @@
       "textura": "Ligero",
       "beneficio": "Limpia impurezas y exceso de grasa respetando el confort de la piel.",
       "cuando": "Mañana y noche sobre rostro húmedo; masajear y enjuagar.",
-      "precio": 27249,
+      "precio": 21799,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwde861219/images/products/90911/90911.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -1087,7 +1087,7 @@
       "textura": "Ligero",
       "beneficio": "Hidrata y matifica, ayudando a mejorar la apariencia de los poros.",
       "cuando": "Mañana y/o noche sobre piel limpia.",
-      "precio": 27229,
+      "precio": 21783,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwfac8cdd7/images/products/87532/87532.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -1112,7 +1112,7 @@
       "textura": "Ligero",
       "beneficio": "Hidrata y calma molestias de la piel sensible con una textura ligera.",
       "cuando": "Mañana y noche después de la limpieza suave.",
-      "precio": 31529,
+      "precio": 25223,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw91512ee3/images/products/89695/89695.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -1137,7 +1137,7 @@
       "textura": "Ligero",
       "beneficio": "Hidrata y ayuda a reforzar la barrera de la piel con sensación de incomodidad.",
       "cuando": "Mañana y noche, antes de la crema hidratante.",
-      "precio": 42999,
+      "precio": 34399,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwa11a33dc/images/products/89542/89542.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
