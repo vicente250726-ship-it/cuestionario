@@ -1,5 +1,5 @@
 {
-  "ultima_actualizacion": "2026-11-27T01:29:45.597752+00:00",
+  "ultima_actualizacion": "2026-11-27T16:08:29.811954+00:00",
   "total_productos": 50,
   "productos": [
     {
@@ -24,7 +24,7 @@
       "textura": "Ligero",
       "beneficio": "Fotoprotector facial ultraligero con toque de color que protege del sol y repara el daño solar acumulado.",
       "cuando": "Todas las mañanas",
-      "precio": 13804,
+      "precio": 12550,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw3c5dbe09/images/products/93447/93447.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -71,7 +71,7 @@
       "textura": "Ligero",
       "beneficio": "Ayuda a reducir imperfecciones, marcas persistentes y apariencia de poros mediante exfoliación.",
       "cuando": "Por la noche, sobre piel seca; no combinar con otros exfoliantes. Fotoprotección de día.",
-      "precio": 23134,
+      "precio": 24007,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw4ba8c0f5/images/products/89156/89156.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -95,7 +95,7 @@
       "textura": "Ligero",
       "beneficio": "Suaviza la apariencia de arrugas y ayuda a mejorar el tono irregular.",
       "cuando": "Por la noche, antes de la crema; introducir gradualmente según tolerancia. Fotoprotección de día.",
-      "precio": 23690,
+      "precio": 24584,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw0fc73483/images/products/87901/87901.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -120,7 +120,7 @@
       "textura": "Ligero",
       "beneficio": "Hidrata y calma molestias de la piel sensible con una textura fluida.",
       "cuando": "Mañana y/o noche, después de la limpieza.",
-      "precio": 15179,
+      "precio": 16559,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw48f71c6e/images/products/90165/90165.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -146,7 +146,7 @@
       "textura": "Cremoso",
       "beneficio": "Hidrata y aporta confort a la piel sensible con necesidad de nutrición.",
       "cuando": "Mañana y/o noche, después de la limpieza.",
-      "precio": 15179,
+      "precio": 16559,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwebf05eda/images/products/90167/90167.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -196,7 +196,7 @@
       "textura": "Cremoso",
       "beneficio": "Bálsamo que calma zonas secas o irritadas y ayuda a reparar la barrera cutánea.",
       "cuando": "Sobre piel limpia y seca, en zonas que lo necesiten. No aplicar sobre heridas abiertas.",
-      "precio": 6896,
+      "precio": 7523,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw924f64c5/images/products/91276/91276.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -269,7 +269,7 @@
       "textura": "Ligero",
       "beneficio": "Hidrata y ayuda a suavizar la apariencia de líneas y arrugas.",
       "cuando": "Mañana y noche, antes de la hidratante; protector solar de día.",
-      "precio": 23897,
+      "precio": 24799,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw339b5d0f/images/products/96383/96383.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -464,7 +464,7 @@
       "textura": "Ligero",
       "beneficio": "Ayuda a suavizar la textura y la apariencia de marcas posteriores a imperfecciones.",
       "cuando": "Por la noche; introducir gradualmente según tolerancia. Usar protector solar de día.",
-      "precio": 19055,
+      "precio": 14291,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwdd539ab3/images/products/92281/92281.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -513,7 +513,7 @@
       "textura": "Ligero",
       "beneficio": "Ayuda a disminuir manchas oscuras y aporta hidratación para un tono más uniforme.",
       "cuando": "Mañana y noche, antes de la crema; máximo cuatro aplicaciones diarias de productos con Thiamidol en total.",
-      "precio": 37751,
+      "precio": 25954,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw47497bd9/images/products/86727/86727.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -536,7 +536,7 @@
       "textura": "Ligero",
       "beneficio": "Ayuda a reducir manchas con una textura ultraligera de rápida absorción.",
       "cuando": "Mañana y/o noche; máximo cuatro aplicaciones diarias de productos con Thiamidol en total. Protector solar de día.",
-      "precio": 38415,
+      "precio": 26410,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwdd305d01/images/products/90889/90889.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -559,7 +559,7 @@
       "textura": "Cremoso",
       "beneficio": "Crema nocturna que ayuda a atenuar manchas y favorece el confort de la piel.",
       "cuando": "Una vez por la noche; máximo cuatro aplicaciones diarias de productos con Thiamidol en total.",
-      "precio": 33255,
+      "precio": 29098,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw453841ed/images/products/86728/86728.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -656,7 +656,7 @@
       "textura": "Ligero",
       "beneficio": "Ayuda a controlar el exceso de brillo y deja un acabado mate en piel grasa.",
       "cuando": "Mañana y noche sobre piel limpia; finalizar con protector solar durante el día.",
-      "precio": 20452,
+      "precio": 19189,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw6f212201/images/products/96688/96688.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -681,7 +681,7 @@
       "textura": "Ligero",
       "beneficio": "Hidrata, ayuda a suavizar líneas finas y mejora la apariencia de los poros.",
       "cuando": "Mañana y noche, antes de la crema; protector solar durante el día.",
-      "precio": 22889,
+      "precio": 20982,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwbf6ea9a8/images/products/89437/89437.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -704,7 +704,7 @@
       "textura": "Cremoso",
       "beneficio": "Hidrata y proporciona confort a la piel sensible, ayudando a mantener su barrera.",
       "cuando": "Mañana y/o noche tras la limpieza y el sérum si corresponde.",
-      "precio": 23723,
+      "precio": 21746,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw86162bca/images/products/91923/91923.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -752,7 +752,7 @@
       "textura": "Ligero",
       "beneficio": "Hidrata la piel grasa o mixta con una textura ligera y acabado matificante.",
       "cuando": "Mañana y/o noche; terminar con protector solar durante el día.",
-      "precio": 29062,
+      "precio": 27124,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dwff8d7171/images/products/93362/93362.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -776,7 +776,7 @@
       "textura": "Ligero",
       "beneficio": "Limpia impurezas y ayuda a reducir el exceso de grasa en piel con tendencia acneica.",
       "cuando": "Mañana y/o noche; masajear sobre piel húmeda y enjuagar.",
-      "precio": 18517,
+      "precio": 17282,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw34c3a8ce/images/products/91783/91783.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
@@ -1162,7 +1162,7 @@
       "textura": "Ligero",
       "beneficio": "Aporta hidratación y ayuda a fortalecer la barrera cutánea con una textura ligera.",
       "cuando": "Mañana y/o noche sobre piel limpia, antes de la crema.",
-      "precio": 18771,
+      "precio": 20477,
       "imagen": "https://www.farmaciasahumada.cl/dw/image/v2/BJVH_PRD/on/demandware.static/-/Sites-ahumada-master-catalog/default/dw3297d2a9/images/products/83549/83549.jpg?sw=1050&sh=1050&sm=fit",
       "fuente": "sfcc_en_vivo"
     },
